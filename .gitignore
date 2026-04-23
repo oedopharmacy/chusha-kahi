@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Cloudflare Wrangler
+.wrangler/
+.dev.vars
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Update script local state
+data/.update_state.json
+
+# Large source files（再取得可能）: ダウンロード可能なPDFは除外
+raw/yakka/*.pdf
+raw/yakka/yakka_naiyou_*.xlsx
+raw/yakka/yakka_gaiyou_*.xlsx
+raw/yakka/yakka_shika_*.xlsx
+
+# 編集途中
+data/match_draft.csv

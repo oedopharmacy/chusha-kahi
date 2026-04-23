@@ -1,0 +1,682 @@
+[
+  {
+    "name": "インスリン製剤",
+    "name_normalized": "インスリン製剤",
+    "condition": null
+  },
+  {
+    "name": "ヒト成長ホルモン剤",
+    "name_normalized": "ヒト成長ホルモン剤",
+    "condition": null
+  },
+  {
+    "name": "遺伝子組換え活性型血液凝固第Ⅶ因子製剤",
+    "name_normalized": "遺伝子組換活性型血液凝固第Ⅶ因子製剤",
+    "condition": null
+  },
+  {
+    "name": "乾燥濃縮人血液凝固第Ⅹ因子加活性化第Ⅶ因子製剤",
+    "name_normalized": "乾燥濃縮人血液凝固第Ⅹ因子加活性化第Ⅶ因子製剤",
+    "condition": null
+  },
+  {
+    "name": "乾燥人血液凝固第Ⅷ因子製剤",
+    "name_normalized": "乾燥人血液凝固第Ⅷ因子製剤",
+    "condition": null
+  },
+  {
+    "name": "遺伝子組換え型血液凝固第Ⅷ因子製剤",
+    "name_normalized": "遺伝子組換型血液凝固第Ⅷ因子製剤",
+    "condition": null
+  },
+  {
+    "name": "乾燥人血液凝固第Ⅸ因子製剤",
+    "name_normalized": "乾燥人血液凝固第Ⅸ因子製剤",
+    "condition": null
+  },
+  {
+    "name": "遺伝子組換え型血液凝固第Ⅸ因子製剤",
+    "name_normalized": "遺伝子組換型血液凝固第Ⅸ因子製剤",
+    "condition": null
+  },
+  {
+    "name": "活性化プロトロンビン複合体",
+    "name_normalized": "活性化プロトロンビン複合体",
+    "condition": null
+  },
+  {
+    "name": "乾燥人血液凝固因子抗体迂う回活性複合体",
+    "name_normalized": "乾燥人血液凝固因子抗体迂回活性複合体",
+    "condition": null
+  },
+  {
+    "name": "性腺刺激ホルモン放出ホルモン剤",
+    "name_normalized": "性腺刺激ホルモン放出ホルモン剤",
+    "condition": null
+  },
+  {
+    "name": "性腺刺激ホルモン製剤",
+    "name_normalized": "性腺刺激ホルモン製剤",
+    "condition": null
+  },
+  {
+    "name": "ゴナドトロピン放出ホルモン誘導体",
+    "name_normalized": "ゴナドトロピン放出ホルモン誘導体",
+    "condition": null
+  },
+  {
+    "name": "ソマトスタチンアナログ",
+    "name_normalized": "ソマトスタチンアナログ",
+    "condition": null
+  },
+  {
+    "name": "顆か粒球コロニー形成刺激因子製剤",
+    "name_normalized": "顆粒球コロニー形成刺激因子製剤",
+    "condition": null
+  },
+  {
+    "name": "自己連続携行式腹膜灌かん流用灌かん流液",
+    "name_normalized": "自己連続携行式腹膜灌かん流用灌かん流液",
+    "condition": null
+  },
+  {
+    "name": "在宅中心静脈栄養法用輸液",
+    "name_normalized": "在宅中心静脈栄養法用輸液",
+    "condition": null
+  },
+  {
+    "name": "インターフェロンアルファ製剤",
+    "name_normalized": "インターフェロンアルファ製剤",
+    "condition": null
+  },
+  {
+    "name": "インターフェロンベータ製剤",
+    "name_normalized": "インターフェロンベータ製剤",
+    "condition": null
+  },
+  {
+    "name": "ブプレノルフィン製剤",
+    "name_normalized": "ブプレノルフィン製剤",
+    "condition": null
+  },
+  {
+    "name": "抗悪性腫瘍剤",
+    "name_normalized": "抗悪性腫瘍剤",
+    "condition": null
+  },
+  {
+    "name": "グルカゴン製剤",
+    "name_normalized": "グルカゴン製剤",
+    "condition": null
+  },
+  {
+    "name": "グルカゴン様ペプチド―1受容体アゴニスト",
+    "name_normalized": "グルカゴン様ペプチド―1受容体アゴニスト",
+    "condition": null
+  },
+  {
+    "name": "ヒトソマトメジンC製剤",
+    "name_normalized": "ヒトソマトメジンC製剤",
+    "condition": null
+  },
+  {
+    "name": "人工腎臓用透析液",
+    "name_normalized": "人工腎臓用透析液",
+    "condition": "在宅血液透析を行っている患者(以下「在宅血液透析患者」という。)に対して使用する場合に限る。"
+  },
+  {
+    "name": "血液凝固阻止剤",
+    "name_normalized": "血液凝固阻止剤",
+    "condition": "在宅血液透析患者に対して使用する場合に限る。"
+  },
+  {
+    "name": "生理食塩水",
+    "name_normalized": "生理食塩水",
+    "condition": "在宅血液透析患者に対して使用する場合及び本号に掲げる注射薬を投与するに当たりその溶解又は希釈に用いる場合に限る。"
+  },
+  {
+    "name": "プロスタグランジンI2製剤",
+    "name_normalized": "プロスタグランジンI2製剤",
+    "condition": null
+  },
+  {
+    "name": "モルヒネ塩酸塩製剤",
+    "name_normalized": "モルヒネ塩酸塩製剤",
+    "condition": null
+  },
+  {
+    "name": "エタネルセプト製剤",
+    "name_normalized": "エタネルセプト製剤",
+    "condition": null
+  },
+  {
+    "name": "注射用水",
+    "name_normalized": "注射用水",
+    "condition": "本号に掲げる注射薬を投与するに当たりその溶解又は希釈に用いる場合に限る。"
+  },
+  {
+    "name": "ペグビソマント製剤",
+    "name_normalized": "ペグビソマント製剤",
+    "condition": null
+  },
+  {
+    "name": "スマトリプタン製剤",
+    "name_normalized": "スマトリプタン製剤",
+    "condition": null
+  },
+  {
+    "name": "フェンタニルクエン酸塩製剤",
+    "name_normalized": "フェンタニルクエン酸塩製剤",
+    "condition": null
+  },
+  {
+    "name": "複方オキシコドン製剤",
+    "name_normalized": "複方オキシコドン製剤",
+    "condition": null
+  },
+  {
+    "name": "ベタメタゾンリン酸エステルナトリウム製剤",
+    "name_normalized": "ベタメタゾンリン酸エステルナトリウム製剤",
+    "condition": null
+  },
+  {
+    "name": "デキサメタゾンリン酸エステルナトリウム製剤",
+    "name_normalized": "デキサメタゾンリン酸エステルナトリウム製剤",
+    "condition": null
+  },
+  {
+    "name": "デキサメタゾンメタスルホ安息香酸エステルナトリウム製剤",
+    "name_normalized": "デキサメタゾンメタスルホ安息香酸エステルナトリウム製剤",
+    "condition": null
+  },
+  {
+    "name": "プロトンポンプ阻害剤",
+    "name_normalized": "プロトンポンプ阻害剤",
+    "condition": null
+  },
+  {
+    "name": "H2遮断剤",
+    "name_normalized": "H2遮断剤",
+    "condition": null
+  },
+  {
+    "name": "カルバゾクロムスルホン酸ナトリウム製剤",
+    "name_normalized": "カルバゾクロムスルホン酸ナトリウム製剤",
+    "condition": null
+  },
+  {
+    "name": "トラネキサム酸製剤",
+    "name_normalized": "トラネキサム酸製剤",
+    "condition": null
+  },
+  {
+    "name": "フルルビプロフェンアキセチル製剤",
+    "name_normalized": "フルルビプロフェンアキセチル製剤",
+    "condition": null
+  },
+  {
+    "name": "メトクロプラミド製剤",
+    "name_normalized": "メトクロプラミド製剤",
+    "condition": null
+  },
+  {
+    "name": "プロクロルペラジン製剤",
+    "name_normalized": "プロクロルペラジン製剤",
+    "condition": null
+  },
+  {
+    "name": "ブチルスコポラミン臭化物製剤",
+    "name_normalized": "ブチルスコポラミン臭化物製剤",
+    "condition": null
+  },
+  {
+    "name": "グリチルリチン酸モノアンモニウム・グリシン・L―システイン塩酸塩配合剤",
+    "name_normalized": "グリチルリチン酸モノアンモニウム・グリシン・L―システイン塩酸塩配合剤",
+    "condition": null
+  },
+  {
+    "name": "アダリムマブ製剤",
+    "name_normalized": "アダリムマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "エリスロポエチン",
+    "name_normalized": "エリスロポエチン",
+    "condition": "在宅血液透析又は在宅腹膜灌かん流を行っている患者のうち腎性貧血状態にあるものに対して使用する場合に限る。"
+  },
+  {
+    "name": "ダルベポエチン",
+    "name_normalized": "ダルベポエチン",
+    "condition": "在宅血液透析又は在宅腹膜灌かん流を行っている患者のうち腎性貧血状態にあるものに対して使用する場合に限る。"
+  },
+  {
+    "name": "テリパラチド製剤",
+    "name_normalized": "テリパラチド製剤",
+    "condition": null
+  },
+  {
+    "name": "アドレナリン製剤",
+    "name_normalized": "アドレナリン製剤",
+    "condition": null
+  },
+  {
+    "name": "ヘパリンカルシウム製剤",
+    "name_normalized": "ヘパリンカルシウム製剤",
+    "condition": null
+  },
+  {
+    "name": "オキシコドン塩酸塩製剤",
+    "name_normalized": "オキシコドン塩酸塩製剤",
+    "condition": null
+  },
+  {
+    "name": "アポモルヒネ塩酸塩製剤",
+    "name_normalized": "アポモルヒネ塩酸塩製剤",
+    "condition": null
+  },
+  {
+    "name": "セルトリズマブペゴル製剤",
+    "name_normalized": "セルトリズマブペゴル製剤",
+    "condition": null
+  },
+  {
+    "name": "トシリズマブ製剤",
+    "name_normalized": "トシリズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "メトレレプチン製剤",
+    "name_normalized": "メトレレプチン製剤",
+    "condition": null
+  },
+  {
+    "name": "アバタセプト製剤",
+    "name_normalized": "アバタセプト製剤",
+    "condition": null
+  },
+  {
+    "name": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+    "name_normalized": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+    "condition": null
+  },
+  {
+    "name": "電解質製剤",
+    "name_normalized": "電解質製剤",
+    "condition": null
+  },
+  {
+    "name": "注射用抗菌薬",
+    "name_normalized": "注射用抗菌薬",
+    "condition": null
+  },
+  {
+    "name": "エダラボン製剤",
+    "name_normalized": "エダラボン製剤",
+    "condition": "筋萎縮性側索硬化症患者に対して使用する場合に限る。"
+  },
+  {
+    "name": "アスホターゼ　アルファ製剤",
+    "name_normalized": "アスホターゼ　アルファ製剤",
+    "condition": null
+  },
+  {
+    "name": "グラチラマー酢酸塩製剤",
+    "name_normalized": "グラチラマー酢酸塩製剤",
+    "condition": null
+  },
+  {
+    "name": "脂肪乳剤",
+    "name_normalized": "脂肪乳剤",
+    "condition": null
+  },
+  {
+    "name": "セクキヌマブ製剤",
+    "name_normalized": "セクキヌマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "エボロクマブ製剤",
+    "name_normalized": "エボロクマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "ブロダルマブ製剤",
+    "name_normalized": "ブロダルマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "アリロクマブ製剤",
+    "name_normalized": "アリロクマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "ベリムマブ製剤",
+    "name_normalized": "ベリムマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "イキセキズマブ製剤",
+    "name_normalized": "イキセキズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "ゴリムマブ製剤",
+    "name_normalized": "ゴリムマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "エミシズマブ製剤",
+    "name_normalized": "エミシズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "イカチバント製剤",
+    "name_normalized": "イカチバント製剤",
+    "condition": null
+  },
+  {
+    "name": "サリルマブ製剤",
+    "name_normalized": "サリルマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "デュピルマブ製剤",
+    "name_normalized": "デュピルマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "ヒドロモルフォン塩酸塩製剤",
+    "name_normalized": "ヒドロモルフォン塩酸塩製剤",
+    "condition": null
+  },
+  {
+    "name": "インスリン・グルカゴン様ペプチド―1受容体アゴニスト配合剤",
+    "name_normalized": "インスリン・グルカゴン様ペプチド―1受容体アゴニスト配合剤",
+    "condition": null
+  },
+  {
+    "name": "ヒドロコルチゾンコハク酸エステルナトリウム製剤",
+    "name_normalized": "ヒドロコルチゾンコハク酸エステルナトリウム製剤",
+    "condition": null
+  },
+  {
+    "name": "遺伝子組換えヒトvon Willebrand因子製剤",
+    "name_normalized": "遺伝子組換えヒトvon Willebrand因子製剤",
+    "condition": null
+  },
+  {
+    "name": "ブロスマブ製剤",
+    "name_normalized": "ブロスマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "アガルシダーゼ　アルファ製剤",
+    "name_normalized": "アガルシダーゼ　アルファ製剤",
+    "condition": null
+  },
+  {
+    "name": "アガルシダーゼ　ベータ製剤",
+    "name_normalized": "アガルシダーゼ　ベータ製剤",
+    "condition": null
+  },
+  {
+    "name": "アルグルコシダーゼ　アルファ製剤",
+    "name_normalized": "アルグルコシダーゼ　アルファ製剤",
+    "condition": null
+  },
+  {
+    "name": "イデュルスルファーゼ製剤",
+    "name_normalized": "イデュルスルファーゼ製剤",
+    "condition": null
+  },
+  {
+    "name": "イミグルセラーゼ製剤",
+    "name_normalized": "イミグルセラーゼ製剤",
+    "condition": null
+  },
+  {
+    "name": "エロスルファーゼ　アルファ製剤",
+    "name_normalized": "エロスルファーゼ　アルファ製剤",
+    "condition": null
+  },
+  {
+    "name": "ガルスルファーゼ製剤",
+    "name_normalized": "ガルスルファーゼ製剤",
+    "condition": null
+  },
+  {
+    "name": "セベリパーゼ　アルファ製剤",
+    "name_normalized": "セベリパーゼ　アルファ製剤",
+    "condition": null
+  },
+  {
+    "name": "ベラグルセラーゼ　アルファ製剤",
+    "name_normalized": "ベラグルセラーゼ　アルファ製剤",
+    "condition": null
+  },
+  {
+    "name": "ラロニダーゼ製剤",
+    "name_normalized": "ラロニダーゼ製剤",
+    "condition": null
+  },
+  {
+    "name": "メポリズマブ製剤",
+    "name_normalized": "メポリズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "オマリズマブ製剤",
+    "name_normalized": "オマリズマブ製剤",
+    "condition": "季節性アレルギー性鼻炎の治療のために使用する場合を除く。"
+  },
+  {
+    "name": "テデュグルチド製剤",
+    "name_normalized": "テデュグルチド製剤",
+    "condition": null
+  },
+  {
+    "name": "サトラリズマブ製剤",
+    "name_normalized": "サトラリズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "ビルトラルセン製剤",
+    "name_normalized": "ビルトラルセン製剤",
+    "condition": null
+  },
+  {
+    "name": "レムデシビル製剤",
+    "name_normalized": "レムデシビル製剤",
+    "condition": null
+  },
+  {
+    "name": "ガルカネズマブ製剤",
+    "name_normalized": "ガルカネズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "オファツムマブ製剤",
+    "name_normalized": "オファツムマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "ボソリチド製剤",
+    "name_normalized": "ボソリチド製剤",
+    "condition": null
+  },
+  {
+    "name": "エレヌマブ製剤",
+    "name_normalized": "エレヌマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "アバロパラチド酢酸塩製剤",
+    "name_normalized": "アバロパラチド酢酸塩製剤",
+    "condition": null
+  },
+  {
+    "name": "カプラシズマブ製剤",
+    "name_normalized": "カプラシズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "乾燥濃縮人C1―インアクチベーター製剤",
+    "name_normalized": "乾燥濃縮人C1―インアクチベーター製剤",
+    "condition": null
+  },
+  {
+    "name": "フレマネズマブ製剤",
+    "name_normalized": "フレマネズマブ製剤",
+    "condition": "四週間に一回投与する場合に限る。"
+  },
+  {
+    "name": "メトトレキサート製剤",
+    "name_normalized": "メトトレキサート製剤",
+    "condition": null
+  },
+  {
+    "name": "チルゼパチド製剤",
+    "name_normalized": "チルゼパチド製剤",
+    "condition": null
+  },
+  {
+    "name": "ビメキズマブ製剤",
+    "name_normalized": "ビメキズマブ製剤",
+    "condition": "四週間を超える間隔で投与する場合を除く。"
+  },
+  {
+    "name": "ホスレボドパ・ホスカルビドパ水和物配合剤",
+    "name_normalized": "ホスレボドパ・ホスカルビドパ水和物配合剤",
+    "condition": null
+  },
+  {
+    "name": "ペグバリアーゼ製剤",
+    "name_normalized": "ペグバリアーゼ製剤",
+    "condition": null
+  },
+  {
+    "name": "パビナフスプ　アルファ製剤",
+    "name_normalized": "パビナフスプ　アルファ製剤",
+    "condition": null
+  },
+  {
+    "name": "アバルグルコシダーゼ　アルファ製剤",
+    "name_normalized": "アバルグルコシダーゼ　アルファ製剤",
+    "condition": null
+  },
+  {
+    "name": "ラナデルマブ製剤",
+    "name_normalized": "ラナデルマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "ネモリズマブ製剤",
+    "name_normalized": "ネモリズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "ペグセタコプラン製剤",
+    "name_normalized": "ペグセタコプラン製剤",
+    "condition": null
+  },
+  {
+    "name": "ジルコプランナトリウム製剤",
+    "name_normalized": "ジルコプランナトリウム製剤",
+    "condition": null
+  },
+  {
+    "name": "コンシズマブ製剤",
+    "name_normalized": "コンシズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "テゼペルマブ製剤",
+    "name_normalized": "テゼペルマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "オゾラリズマブ製剤",
+    "name_normalized": "オゾラリズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "トラロキヌマブ製剤",
+    "name_normalized": "トラロキヌマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "エフガルチギモド　アルファ・ボルヒアルロニダーゼ　アルファ配合剤",
+    "name_normalized": "エフガルチギモド　アルファ・ボルヒアルロニダーゼ　アルファ配合剤",
+    "condition": null
+  },
+  {
+    "name": "ドブタミン塩酸塩製剤",
+    "name_normalized": "ドブタミン塩酸塩製剤",
+    "condition": null
+  },
+  {
+    "name": "ドパミン塩酸塩製剤",
+    "name_normalized": "ドパミン塩酸塩製剤",
+    "condition": null
+  },
+  {
+    "name": "ノルアドレナリン製剤",
+    "name_normalized": "ノルアドレナリン製剤",
+    "condition": null
+  },
+  {
+    "name": "ベドリズマブ製剤",
+    "name_normalized": "ベドリズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "ミリキズマブ製剤",
+    "name_normalized": "ミリキズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "乾燥濃縮人プロテインC製剤",
+    "name_normalized": "乾燥濃縮人プロテインC製剤",
+    "condition": null
+  },
+  {
+    "name": "メコバラミン製剤",
+    "name_normalized": "メコバラミン製剤",
+    "condition": null
+  },
+  {
+    "name": "ベンラリズマブ製剤",
+    "name_normalized": "ベンラリズマブ製剤",
+    "condition": "四週間を超える間隔で投与する場合を除く。"
+  },
+  {
+    "name": "マルスタシマブ製剤",
+    "name_normalized": "マルスタシマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "ロザノリキシズマブ製剤",
+    "name_normalized": "ロザノリキシズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "レブリキズマブ製剤",
+    "name_normalized": "レブリキズマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "クロバリマブ製剤",
+    "name_normalized": "クロバリマブ製剤",
+    "condition": null
+  },
+  {
+    "name": "シパグルコシダーゼ　アルファ製剤",
+    "name_normalized": "シパグルコシダーゼ　アルファ製剤",
+    "condition": null
+  },
+  {
+    "name": "パロペグテリパラチド製剤",
+    "name_normalized": "パロペグテリパラチド製剤",
+    "condition": null
+  }
+]

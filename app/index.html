@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>注射薬 院外処方可否 検索</title>
+<style>
+  :root { --bg:#f8f9fb; --card:#fff; --border:#e2e5ec; --text:#222; --muted:#666; --ok:#22a06b; --ng:#c73757; --warn:#d17a00; --del:#888; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Hiragino Sans", "Yu Gothic", sans-serif; margin:0; background:var(--bg); color:var(--text); }
+  header { padding: 18px 20px 8px; background:var(--card); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:10; }
+  h1 { font-size: 18px; margin:0 0 6px; }
+  .meta { font-size: 11px; color: var(--muted); }
+  .search-wrap { padding: 12px 20px 14px; background:var(--card); border-bottom: 1px solid var(--border); position:sticky; top:52px; z-index:9; }
+  #q { width:100%; padding:10px 12px; font-size:16px; border:1px solid var(--border); border-radius:8px; outline:none; }
+  #q:focus { border-color:#4b7bec; }
+  .filters { margin-top:8px; display:flex; gap:8px; font-size:12px; flex-wrap:wrap; }
+  .filters label { display:inline-flex; align-items:center; gap:4px; padding:4px 10px; border:1px solid var(--border); border-radius:999px; background:#fff; cursor:pointer; }
+  .filters input { margin: 0; }
+  #results { padding: 10px 12px 60px; }
+  .hit-count { font-size: 11px; color: var(--muted); margin: 6px 8px 8px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:10px 12px; margin:8px 0; }
+  .row-top { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .name { font-weight:600; font-size:15px; }
+  .badge { font-size:12px; font-weight:700; padding:2px 10px; border-radius:12px; }
+  .badge.ok { background:#e6f7ef; color:var(--ok); }
+  .badge.ng { background:#fbe9ee; color:var(--ng); }
+  .badge.del { background:#eee; color:var(--del); }
+  .row-sub { color:var(--muted); font-size:12px; margin-top:4px; }
+  .row-kikaku { font-size:13px; margin-top:2px; }
+  .reason { font-size:11px; color:var(--muted); margin-top:6px; border-top:1px dashed var(--border); padding-top:6px; }
+  .haishi { color:var(--warn); font-size:11px; margin-top:4px; }
+  footer { border-top:1px solid var(--border); padding:14px 20px; background:var(--card); font-size:11px; color:var(--muted); }
+  .disclaimer { background:#fff6e5; border:1px solid #f5c983; border-radius:8px; padding:10px 12px; margin:10px 12px; font-size:12px; color:#6b4d00; }
+  mark { background: #fff3a3; padding: 0 2px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>注射薬 院外処方可否 検索</h1>
+  <div class="meta" id="meta">loading…</div>
+</header>
+
+<div class="disclaimer">
+  ⚠ 本ツールは告示テキストと薬価基準の機械突合による参考情報です。<br>
+  最終判定は必ず薬剤師・医師が添付文書・告示原文をご確認ください。
+</div>
+
+<div class="search-wrap">
+  <input id="q" type="search" autocomplete="off" autofocus placeholder="販売名・成分名・YJコードで検索（例: ヒューマリン／インスリン／ソマトロピン）">
+  <div class="filters">
+    <label><input type="checkbox" id="f_ok" checked> ○ 院外可</label>
+    <label><input type="checkbox" id="f_ng" checked> × 院内のみ</label>
+    <label><input type="checkbox" id="f_del" checked> － 削除品目</label>
+    <label><input type="checkbox" id="f_haishi"> 廃止予定のみ</label>
+  </div>
+</div>
+
+<div class="hit-count" id="hit"></div>
+<div id="results"></div>
+
+<footer>
+  出典: 薬価基準収載品目リスト（厚労省, 令和8年4月15日適用）／<br>
+  平成18年厚労省告示第107号 第十 第一号（令和8年2月1日改正）<br>
+  本ツールは医療機関向け検索補助として試験運用中。返戻責任は利用者に帰属します。
+</footer>
+
+<script>
+let DATA = [];
+let META = {};
+
+async function load() {
+  const [dataRes, metaRes] = await Promise.all([
+    fetch('./data.json'),
+    fetch('./meta.json')
+  ]);
+  DATA = await dataRes.json();
+  META = await metaRes.json();
+  // 検索用正規化文字列を事前計算（起動時1回のみ）
+  for (const r of DATA) {
+    r._hay = normText(r.n + '\t' + r.s + '\t' + r.y + '\t' + r.m);
+  }
+  document.getElementById('meta').textContent =
+    `収載${META.total}品目 ／ ○${META.stats['○']||0} ×${META.stats['×']||0} －${META.stats['－']||0}`
+    + (META.last_updated ? ` ／ 最終更新 ${META.last_updated}` : '');
+  render();
+}
+
+const q = document.getElementById('q');
+const f_ok = document.getElementById('f_ok');
+const f_ng = document.getElementById('f_ng');
+const f_del = document.getElementById('f_del');
+const f_haishi = document.getElementById('f_haishi');
+
+// ひらがな→カタカナ（U+3041–U+3096 → +0x60）
+function hiraToKata(s) {
+  return s.replace(/[\u3041-\u3096]/g, ch =>
+    String.fromCharCode(ch.charCodeAt(0) + 0x60));
+}
+
+// 半角カナ→全角カナ（濁点・半濁点含む）
+const _HALF_KANA_MAP = {
+  'ｶﾞ':'ガ','ｷﾞ':'ギ','ｸﾞ':'グ','ｹﾞ':'ゲ','ｺﾞ':'ゴ',
+  'ｻﾞ':'ザ','ｼﾞ':'ジ','ｽﾞ':'ズ','ｾﾞ':'ゼ','ｿﾞ':'ゾ',
+  'ﾀﾞ':'ダ','ﾁﾞ':'ヂ','ﾂﾞ':'ヅ','ﾃﾞ':'デ','ﾄﾞ':'ド',
+  'ﾊﾞ':'バ','ﾋﾞ':'ビ','ﾌﾞ':'ブ','ﾍﾞ':'ベ','ﾎﾞ':'ボ',
+  'ﾊﾟ':'パ','ﾋﾟ':'ピ','ﾌﾟ':'プ','ﾍﾟ':'ペ','ﾎﾟ':'ポ','ｳﾞ':'ヴ',
+  'ｱ':'ア','ｲ':'イ','ｳ':'ウ','ｴ':'エ','ｵ':'オ',
+  'ｶ':'カ','ｷ':'キ','ｸ':'ク','ｹ':'ケ','ｺ':'コ',
+  'ｻ':'サ','ｼ':'シ','ｽ':'ス','ｾ':'セ','ｿ':'ソ',
+  'ﾀ':'タ','ﾁ':'チ','ﾂ':'ツ','ﾃ':'テ','ﾄ':'ト',
+  'ﾅ':'ナ','ﾆ':'ニ','ﾇ':'ヌ','ﾈ':'ネ','ﾉ':'ノ',
+  'ﾊ':'ハ','ﾋ':'ヒ','ﾌ':'フ','ﾍ':'ヘ','ﾎ':'ホ',
+  'ﾏ':'マ','ﾐ':'ミ','ﾑ':'ム','ﾒ':'メ','ﾓ':'モ',
+  'ﾔ':'ヤ','ﾕ':'ユ','ﾖ':'ヨ',
+  'ﾗ':'ラ','ﾘ':'リ','ﾙ':'ル','ﾚ':'レ','ﾛ':'ロ',
+  'ﾜ':'ワ','ｦ':'ヲ','ﾝ':'ン',
+  'ｧ':'ァ','ｨ':'ィ','ｩ':'ゥ','ｪ':'ェ','ｫ':'ォ',
+  'ｬ':'ャ','ｭ':'ュ','ｮ':'ョ','ｯ':'ッ',
+  'ｰ':'ー','｡':'。','､':'、','｢':'「','｣':'」','･':'・'
+};
+const _HALF_KANA_RE = new RegExp(Object.keys(_HALF_KANA_MAP).sort((a,b)=>b.length-a.length).join('|'),'g');
+function halfToFullKana(s) {
+  return s.replace(_HALF_KANA_RE, ch => _HALF_KANA_MAP[ch]);
+}
+
+// 検索・被検索双方に適用する正規化
+function normText(s) {
+  if (!s) return '';
+  s = halfToFullKana(s);
+  s = hiraToKata(s);
+  s = s.toLowerCase();
+  // 全角英数→半角
+  s = s.replace(/[Ａ-Ｚａ-ｚ０-９]/g, ch => String.fromCharCode(ch.charCodeAt(0)-0xFEE0));
+  // 空白・中黒・長音の揺れ除去
+  s = s.replace(/[\s　・]/g, '');
+  return s;
+}
+function normQuery(s) { return normText((s||'').trim()); }
+
+function highlight(text, queryRaw) {
+  if (!queryRaw) return escapeHtml(text);
+  // Simple: just return escaped text; highlight by substring in normalized space is complex
+  return escapeHtml(text);
+}
+function escapeHtml(s) { return (s||'').replace(/[&<>"']/g, c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function badge(g) {
+  if (g === '○') return '<span class="badge ok">○ 院外可</span>';
+  if (g === '×') return '<span class="badge ng">× 院内のみ</span>';
+  return '<span class="badge del">－ 削除</span>';
+}
+
+function render() {
+  const qn = normQuery(q.value);
+  let results = DATA.filter(r => {
+    if (r.g === '○' && !f_ok.checked) return false;
+    if (r.g === '×' && !f_ng.checked) return false;
+    if (r.g === '－' && !f_del.checked) return false;
+    if (f_haishi.checked && !r.x) return false;
+    if (qn && !r._hay.includes(qn)) return false;
+    return true;
+  });
+  const LIMIT = 200;
+  const truncated = results.length > LIMIT;
+  const shown = results.slice(0, LIMIT);
+  document.getElementById('hit').textContent =
+    truncated ? `${results.length}件ヒット（先頭${LIMIT}件を表示）` : `${results.length}件`;
+
+  const root = document.getElementById('results');
+  root.innerHTML = shown.map(r => `
+    <div class="card">
+      <div class="row-top">
+        <span class="name">${escapeHtml(r.n)}</span>
+        ${badge(r.g)}
+      </div>
+      <div class="row-sub">${escapeHtml(r.s)} ／ ${escapeHtml(r.m)} ／ YJ: ${escapeHtml(r.y)}</div>
+      <div class="row-kikaku">規格: ${escapeHtml(r.k)}  /  薬価: ${escapeHtml(r.p)}</div>
+      ${r.x ? `<div class="haishi">⚠ ${escapeHtml(r.x)}: ${escapeHtml(r.d)}</div>` : ''}
+      <div class="reason">根拠: ${escapeHtml(r.r)}</div>
+    </div>
+  `).join('');
+  if (results.length === 0) root.innerHTML = '<div class="hit-count">該当なし</div>';
+}
+
+q.addEventListener('input', render);
+[f_ok, f_ng, f_del, f_haishi].forEach(el => el.addEventListener('change', render));
+load();
+</script>
+</body>
+</html>

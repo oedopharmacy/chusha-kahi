@@ -1,0 +1,61 @@
+name: 薬価基準 月次自動更新
+
+on:
+  # 毎月 1日・15日・25日 の JST 午前3時（UTC 18:00 前日）に実行
+  schedule:
+    - cron: '0 18 1,15,25 * *'
+  # 手動実行も可
+  workflow_dispatch:
+  # main ブランチへの push 時も自動デプロイ
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python deps
+        run: |
+          pip install openpyxl requests beautifulsoup4 lxml PyYAML
+
+      - name: Fetch latest yakka & rebuild
+        id: update
+        run: |
+          set +e
+          python scripts/update_data.py
+          rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          if [ $rc -eq 0 ]; then
+            echo "status=no-change" >> "$GITHUB_OUTPUT"
+          elif [ $rc -eq 2 ]; then
+            echo "status=updated" >> "$GITHUB_OUTPUT"
+          else
+            exit $rc
+          fi
+
+      - name: Commit data changes
+        if: steps.update.outputs.status == 'updated'
+        run: |
+          git config user.name "chusha-kahi-bot"
+          git config user.email "chusha-kahi-bot@users.noreply.github.com"
+          git add data/ app/data.json app/meta.json raw/yakka/ data/.update_state.json
+          git commit -m "auto: 薬価基準データ更新 ($(date +%Y-%m-%d))" || echo "no changes"
+          git push
+
+      - name: Deploy to Cloudflare Workers
+        if: steps.update.outputs.status == 'updated' || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
