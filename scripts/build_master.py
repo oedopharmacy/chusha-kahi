@@ -257,13 +257,19 @@ def main():
             sei_cache[cache_key] = matcher(seibun, yj_code)
         matches = sei_cache[cache_key]
 
-        # 院外可否
+        # 院外可否判定（4段階：○／△／×／－）
+        #
+        # ○  告示の具体的カテゴリ/成分/製剤名にマッチ（alias/substring/ingredient_list）
+        #     かつ 告示に条件記載なし
+        # △  告示の薬効分類名にYJコードのみでマッチ（broad classification）
+        #     OR 告示に条件記載あり（在宅血液透析限定、ALS限定等）
+        # ×  告示第十第一号のどのカテゴリにも該当せず
+        # －  告示別表2 削除品目
         if is_delisted:
             gaika = "－"
             gaika_reason = "保険使用不可（告示別表2に収載＝削除品目）"
             stats["削除"] += 1
         elif matches:
-            gaika = "○"
             cat_list = [m["category"] for m in matches]
             rules = [m["rule"] for m in matches]
             # 条件付きカテゴリか確認
@@ -271,19 +277,45 @@ def main():
             for m in matches:
                 for c in cats:
                     if c["name"] == m["category"] and c.get("condition"):
-                        conds.append(c["condition"])
+                        conds.append((m["category"], c["condition"]))
+
+            # 具体マッチ（alias/substring/ingredient_list）が1件以上あれば○の候補
+            has_specific = any(not m["rule"].startswith("yj4") for m in matches)
+            has_yj4_only = all(m["rule"].startswith("yj4") for m in matches)
+
             if conds:
+                # 条件付きカテゴリに該当 → △（条件を verbatim 表示）
+                gaika = "△"
+                cond_str = " / ".join(f"[{n}]:{c}" for n, c in conds)
                 gaika_reason = (
                     f"告示第十第一号 [{'/'.join(cat_list)}] "
-                    f"マッチ規則:{','.join(rules)} "
-                    f"※条件付:{conds[0]}"
+                    f"該当（要確認: 告示に条件記載あり）{cond_str}"
                 )
+                stats["△"] = stats.get("△", 0) + 1
+            elif has_specific:
+                # 具体マッチ + 条件なし → ○
+                gaika = "○"
+                gaika_reason = (
+                    f"告示第十第一号 [{'/'.join(cat_list)}] "
+                    f"に該当（{','.join(rules)}）"
+                )
+                stats["○"] += 1
+            elif has_yj4_only:
+                # YJ薬効分類コードのみでマッチ → △（包括分類名記載のため個別確認必要）
+                gaika = "△"
+                gaika_reason = (
+                    f"告示第十第一号 [{'/'.join(cat_list)}] "
+                    f"に薬効分類名で包括記載（YJコード{','.join(m['stem'] for m in matches)}で該当）"
+                    f"※個別品目の臨床適合性・管理料要件を別途確認"
+                )
+                stats["△"] = stats.get("△", 0) + 1
             else:
-                gaika_reason = f"告示第十第一号 [{'/'.join(cat_list)}] マッチ規則:{','.join(rules)}"
-            stats["○"] += 1
+                gaika = "○"
+                gaika_reason = f"告示第十第一号 [{'/'.join(cat_list)}] に該当"
+                stats["○"] += 1
         else:
             gaika = "×"
-            gaika_reason = "告示第十第一号のどのカテゴリにも該当せず（院内処方のみ）"
+            gaika_reason = "告示第十第一号のどのカテゴリにも該当せず（院外処方箋での交付不可が原則）"
             stats["×"] += 1
 
         haishi = "経過措置" if keika else ""

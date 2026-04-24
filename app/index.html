@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>注射薬 院外処方可否 検索</title>
 <style>
-  :root { --bg:#f8f9fb; --card:#fff; --border:#e2e5ec; --text:#222; --muted:#666; --ok:#22a06b; --ng:#c73757; --warn:#d17a00; --del:#888; }
+  :root { --bg:#f8f9fb; --card:#fff; --border:#e2e5ec; --text:#222; --muted:#666; --ok:#22a06b; --ng:#c73757; --warn:#d17a00; --check:#b5880f; --del:#888; }
   * { box-sizing: border-box; }
   body { font-family: -apple-system, "Hiragino Sans", "Yu Gothic", sans-serif; margin:0; background:var(--bg); color:var(--text); }
   header { padding: 18px 20px 8px; background:var(--card); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:10; }
@@ -24,6 +24,7 @@
   .name { font-weight:600; font-size:15px; }
   .badge { font-size:12px; font-weight:700; padding:2px 10px; border-radius:12px; }
   .badge.ok { background:#e6f7ef; color:var(--ok); }
+  .badge.check { background:#fff4d1; color:var(--check); border:1px solid #e8ce68; }
   .badge.ng { background:#fbe9ee; color:var(--ng); }
   .badge.del { background:#eee; color:var(--del); }
   .row-sub { color:var(--muted); font-size:12px; margin-top:4px; }
@@ -43,14 +44,19 @@
 </header>
 
 <div class="disclaimer">
-  ⚠ 本ツールは告示テキストと薬価基準の機械突合による参考情報です。<br>
-  最終判定は必ず薬剤師・医師が添付文書・告示原文をご確認ください。
+  <strong>⚠ 判定区分の意味</strong><br>
+  <b>○ 院外可</b>：告示第十第一号に具体的カテゴリ／成分名として記載あり・条件なし<br>
+  <b>△ 要確認</b>：告示に条件付き記載（例「在宅血液透析患者に限る」）、または告示に薬効分類名で包括記載されているもの（例「抗悪性腫瘍剤」「注射用抗菌薬」「電解質製剤」）。<strong>個別品目の条件適合性・臨床適合性・管理料要件を必ず告示原文で確認してください。</strong><br>
+  <b>× 院内のみ</b>：告示第十第一号に記載なし（院外処方箋での交付不可が原則）<br>
+  <b>－ 削除品目</b>：告示別表2に収載、保険使用不可<br>
+  本ツールは機械突合による参考情報です。最終判定は必ず告示原文・通知を直接ご確認ください。
 </div>
 
 <div class="search-wrap">
   <input id="q" type="search" autocomplete="off" autofocus placeholder="販売名・成分名・YJコードで検索（例: ヒューマリン／インスリン／ソマトロピン）">
   <div class="filters">
     <label><input type="checkbox" id="f_ok" checked> ○ 院外可</label>
+    <label><input type="checkbox" id="f_check" checked> △ 要確認</label>
     <label><input type="checkbox" id="f_ng" checked> × 院内のみ</label>
     <label><input type="checkbox" id="f_del" checked> － 削除品目</label>
     <label><input type="checkbox" id="f_haishi"> 廃止予定のみ</label>
@@ -82,13 +88,14 @@ async function load() {
     r._hay = normText(r.n + '\t' + r.s + '\t' + r.y + '\t' + r.m);
   }
   document.getElementById('meta').textContent =
-    `収載${META.total}品目 ／ ○${META.stats['○']||0} ×${META.stats['×']||0} －${META.stats['－']||0}`
+    `収載${META.total}品目 ／ ○${META.stats['○']||0} △${META.stats['△']||0} ×${META.stats['×']||0} －${META.stats['－']||0}`
     + (META.last_updated ? ` ／ 最終更新 ${META.last_updated}` : '');
   render();
 }
 
 const q = document.getElementById('q');
 const f_ok = document.getElementById('f_ok');
+const f_check = document.getElementById('f_check');
 const f_ng = document.getElementById('f_ng');
 const f_del = document.getElementById('f_del');
 const f_haishi = document.getElementById('f_haishi');
@@ -148,6 +155,7 @@ function escapeHtml(s) { return (s||'').replace(/[&<>"']/g, c=>({ '&':'&amp;','<
 
 function badge(g) {
   if (g === '○') return '<span class="badge ok">○ 院外可</span>';
+  if (g === '△') return '<span class="badge check">△ 要確認</span>';
   if (g === '×') return '<span class="badge ng">× 院内のみ</span>';
   return '<span class="badge del">－ 削除</span>';
 }
@@ -156,6 +164,7 @@ function render() {
   const qn = normQuery(q.value);
   let results = DATA.filter(r => {
     if (r.g === '○' && !f_ok.checked) return false;
+    if (r.g === '△' && !f_check.checked) return false;
     if (r.g === '×' && !f_ng.checked) return false;
     if (r.g === '－' && !f_del.checked) return false;
     if (f_haishi.checked && !r.x) return false;
@@ -185,7 +194,7 @@ function render() {
 }
 
 q.addEventListener('input', render);
-[f_ok, f_ng, f_del, f_haishi].forEach(el => el.addEventListener('change', render));
+[f_ok, f_check, f_ng, f_del, f_haishi].forEach(el => el.addEventListener('change', render));
 load();
 </script>
 </body>

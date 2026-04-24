@@ -33,12 +33,22 @@ def main():
 
     from collections import Counter
     stats = Counter(r["g"] for r in rows)
+    # meta.json を更新。既存の source_yakka_url, last_updated, source_yakka は
+    # update_data.py が最新値に書き換えるため、ここでは未指定時のみデフォルトを入れる。
+    existing = {}
+    if OUT_META.exists():
+        try:
+            existing = json.loads(OUT_META.read_text(encoding="utf-8"))
+        except Exception:
+            existing = {}
     meta = {
-        "source_yakka": "令和8年4月15日適用 薬価基準収載品目リスト（注射薬）",
-        "source_kokuji": "平成18年厚労省告示第107号 第十（令和8年2月1日適用版）",
+        "source_yakka": existing.get("source_yakka", "令和8年4月15日適用 薬価基準収載品目リスト（注射薬）"),
+        "source_yakka_url": existing.get("source_yakka_url", ""),
+        "source_kokuji": "平成18年厚労省告示第107号 第十 第一号（令和8年2月1日適用版）",
         "total": len(rows),
         "stats": dict(stats),
-        "caveat": "本ツールは告示第十第一号のカテゴリ×成分名自動マッチに基づく参考情報です。最終判定は薬剤師・医師の判断で行ってください。"
+        "last_updated": existing.get("last_updated", ""),
+        "caveat": "本ツールは機械突合による参考情報です。○は告示に具体的カテゴリ/成分名で記載、△は告示の条件付き記載または薬効分類名包括記載のため個別確認が必要、×は告示非該当を意味します。最終判定は必ず告示原文・関連通知をご確認ください。",
     }
     OUT_META.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"→ {OUT_META}")
