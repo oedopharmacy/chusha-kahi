@@ -31,6 +31,7 @@ ROOT = Path(".")
 YAKKA = ROOT / "data/yakka_chusha_raw.csv"
 CATS = ROOT / "data/kokuji_categories.json"
 ALIASES = ROOT / "data/category_aliases.yaml"
+RULES = ROOT / "data/category_rules.yaml"
 KOKUJI_P2 = ROOT / "raw/kokuji/kokuji107_p2.html"
 OUT_MASTER = ROOT / "data/master.csv"
 OUT_REVIEW = ROOT / "data/review.csv"
@@ -108,15 +109,23 @@ def extract_delisted_injections() -> set:
 
 # ---------------- マッチング ----------------
 
-def build_component_category_map(cats, aliases):
-    """成分名 → [該当カテゴリ] のマップを構築
-    ・aliases YAMLに明記されていれば確定
-    ・成分名にカテゴリ語幹が含まれれば候補
+def build_component_category_map(cats, aliases, rules):
+    """成分名 + YJコード → [該当カテゴリ] のマップを構築
+
+    マッチ優先度:
+      1. aliases YAML（明示的な成分→カテゴリ定義）
+      2. category_rules.yaml の ingredients（薬効分類型カテゴリの明示成分リスト）
+      3. カテゴリ名語幹の substring マッチ
+      4. category_rules.yaml の yj4_codes（YJコード先頭4桁一致）
     """
-    def _match(seibun):
+    cat_by_name = {c["name"]: c for c in cats}
+
+    def _match(seibun, yj_code):
         matches = []
         seibun_n = norm(seibun)
-        # 1. alias 明示
+        yj4 = (yj_code or "")[:4]
+
+        # 1. aliases 明示
         for cat_name, alias_list in aliases.items():
             if not alias_list:
                 continue
@@ -124,8 +133,21 @@ def build_component_category_map(cats, aliases):
                 if norm(a) == seibun_n:
                     matches.append({"category": cat_name, "rule": "alias", "stem": norm(a)})
                     break
+
+        # 2. category_rules.yaml の ingredients（明示成分リスト）
+        for cat_name, rule in rules.items():
+            if not cat_name:
+                continue
+            ingredients = (rule or {}).get("ingredients") or []
+            for ing in ingredients:
+                ing_n = norm(ing)
+                if ing_n and (ing_n == seibun_n or ing_n in seibun_n):
+                    matches.append({"category": cat_name, "rule": "ingredient_list", "stem": ing_n})
+                    break
+
         matched_cat_names = {m["category"] for m in matches}
-        # 2. 自動語幹マッチ
+
+        # 3. 自動語幹マッチ
         for c in cats:
             if c["name"] in matched_cat_names:
                 continue
@@ -134,22 +156,35 @@ def build_component_category_map(cats, aliases):
                 continue
             if stem in seibun_n:
                 matches.append({"category": c["name"], "rule": "substring", "stem": stem})
-        # 3. 重複排除: 他マッチの語幹に内包される短い語幹マッチは除外
-        #    例: 成分「アポモルヒネ塩酸塩水和物」で「モルヒネ塩酸塩」と「アポモルヒネ塩酸塩」両方マッチ
-        #        → 後者（長い方）のみ残す
-        filtered = []
-        for m in matches:
+                matched_cat_names.add(c["name"])
+
+        # 4. YJコード薬効分類マッチ（category_rules.yaml）
+        if yj4 and yj4.isdigit():
+            for cat_name, rule in rules.items():
+                if cat_name in matched_cat_names:
+                    continue
+                yj4_list = (rule or {}).get("yj4_codes") or []
+                if yj4 in [str(x) for x in yj4_list]:
+                    matches.append({"category": cat_name, "rule": f"yj4:{yj4}", "stem": yj4})
+                    matched_cat_names.add(cat_name)
+
+        # 重複排除: 他マッチの語幹に内包される短い語幹マッチは除外
+        # （YJ4とalias/ingredientは stem が別ドメインなので比較対象外）
+        text_matches = [m for m in matches if not m["rule"].startswith("yj4")]
+        code_matches = [m for m in matches if m["rule"].startswith("yj4")]
+        filtered_text = []
+        for m in text_matches:
             s = m["stem"]
             is_subsumed = False
-            for m2 in matches:
+            for m2 in text_matches:
                 if m is m2:
                     continue
                 if s != m2["stem"] and s in m2["stem"]:
                     is_subsumed = True
                     break
             if not is_subsumed:
-                filtered.append(m)
-        return filtered
+                filtered_text.append(m)
+        return filtered_text + code_matches
     return _match
 
 
@@ -166,12 +201,20 @@ def load_aliases():
     return {k: (v or []) for k, v in data.items()}
 
 
+def load_rules():
+    if not RULES.exists():
+        return {}
+    data = yaml.safe_load(RULES.read_text(encoding="utf-8")) or {}
+    return data
+
+
 # ---------------- メイン ----------------
 
 def main():
     cats = load_cats()
     aliases = load_aliases()
-    matcher = build_component_category_map(cats, aliases)
+    rules = load_rules()
+    matcher = build_component_category_map(cats, aliases, rules)
 
     # 削除品目リスト
     delisted = extract_delisted_injections()
@@ -208,10 +251,11 @@ def main():
         # 削除判定
         is_delisted = hinmei in delisted
 
-        # カテゴリマッチ
-        if seibun not in sei_cache:
-            sei_cache[seibun] = matcher(seibun)
-        matches = sei_cache[seibun]
+        # カテゴリマッチ（成分名 + YJコード）
+        cache_key = (seibun, (yj_code or "")[:4])
+        if cache_key not in sei_cache:
+            sei_cache[cache_key] = matcher(seibun, yj_code)
+        matches = sei_cache[cache_key]
 
         # 院外可否
         if is_delisted:
