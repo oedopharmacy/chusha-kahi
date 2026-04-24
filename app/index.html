@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>注射薬 院外処方可否 検索</title>
+<title>大江戸注射</title>
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png">
+<meta name="theme-color" content="#595959">
 <style>
   :root { --bg:#f8f9fb; --card:#fff; --border:#e2e5ec; --text:#222; --muted:#666; --ok:#22a06b; --ng:#c73757; --warn:#d17a00; --check:#b5880f; --del:#888; }
   * { box-sizing: border-box; }
@@ -31,6 +38,15 @@
   .row-kikaku { font-size:13px; margin-top:2px; }
   .reason { font-size:11px; color:var(--muted); margin-top:6px; border-top:1px dashed var(--border); padding-top:6px; }
   .haishi { color:var(--warn); font-size:11px; margin-top:4px; }
+  details.detail { margin-top:8px; border-top:1px dashed var(--border); padding-top:6px; font-size:12px; }
+  details.detail > summary { cursor:pointer; color:#4b7bec; font-size:11px; user-select:none; }
+  details.detail > summary:hover { text-decoration:underline; }
+  .why-box, .how-box, .src-box { margin-top:8px; padding:8px 10px; border-radius:6px; font-size:12px; line-height:1.55; }
+  .why-box { background:#eef5ff; border:1px solid #bed6f7; }
+  .how-box { background:#fff4d1; border:1px solid #e8ce68; }
+  .src-box { background:#f5f5f5; border:1px solid var(--border); font-family:ui-monospace,monospace; font-size:11px; white-space:pre-wrap; }
+  .box-label { font-weight:600; font-size:10px; color:#666; margin-bottom:3px; text-transform:none; letter-spacing:0.03em; }
+  .verify-tag { font-size:10px; color:#2b7a50; margin-left:6px; }
   footer { border-top:1px solid var(--border); padding:14px 20px; background:var(--card); font-size:11px; color:var(--muted); }
   .disclaimer { background:#fff6e5; border:1px solid #f5c983; border-radius:8px; padding:10px 12px; margin:10px 12px; font-size:12px; color:#6b4d00; }
   mark { background: #fff3a3; padding: 0 2px; }
@@ -178,18 +194,29 @@ function render() {
     truncated ? `${results.length}件ヒット（先頭${LIMIT}件を表示）` : `${results.length}件`;
 
   const root = document.getElementById('results');
-  root.innerHTML = shown.map(r => `
+  root.innerHTML = shown.map(r => {
+    const hasDetail = r.why || r.how || r.src;
+    return `
     <div class="card">
       <div class="row-top">
         <span class="name">${escapeHtml(r.n)}</span>
         ${badge(r.g)}
+        ${r.ver ? '<span class="verify-tag" title="Gemini による告示解釈の検証済み">✓ Gemini検証済</span>' : ''}
       </div>
       <div class="row-sub">${escapeHtml(r.s)} ／ ${escapeHtml(r.m)} ／ YJ: ${escapeHtml(r.y)}</div>
       <div class="row-kikaku">規格: ${escapeHtml(r.k)}  /  薬価: ${escapeHtml(r.p)}</div>
       ${r.x ? `<div class="haishi">⚠ ${escapeHtml(r.x)}: ${escapeHtml(r.d)}</div>` : ''}
-      <div class="reason">根拠: ${escapeHtml(r.r)}</div>
+      <div class="reason">判定根拠: ${escapeHtml(r.r)}</div>
+      ${hasDetail ? `
+        <details class="detail">
+          <summary>詳細を表示（なぜこの判定か／処方方法／告示原文）</summary>
+          ${r.why ? `<div class="why-box"><div class="box-label">なぜこの判定か</div>${escapeHtml(r.why)}</div>` : ''}
+          ${r.how ? `<div class="how-box"><div class="box-label">条件付きで可能な処方方法</div>${escapeHtml(r.how)}</div>` : ''}
+          ${r.src ? `<div class="src-box"><div class="box-label">告示原文（該当部分）</div>${escapeHtml(r.src)}</div>` : ''}
+        </details>
+      ` : ''}
     </div>
-  `).join('');
+  `;}).join('');
   if (results.length === 0) root.innerHTML = '<div class="hit-count">該当なし</div>';
 }
 

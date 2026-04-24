@@ -270,48 +270,54 @@ def main():
             gaika_reason = "保険使用不可（告示別表2に収載＝削除品目）"
             stats["削除"] += 1
         elif matches:
-            cat_list = [m["category"] for m in matches]
-            rules = [m["rule"] for m in matches]
-            # 条件付きカテゴリか確認
-            conds = []
+            # 各マッチを「具体的」「条件付」「YJ4のみ」に分類
+            cat_info = {c["name"]: c for c in cats}
+            specific_no_cond = []   # alias/substring/ingredient_list かつ 条件なし → ○ 候補
+            specific_with_cond = [] # 具体マッチだが告示に条件付き記載
+            yj4_only = []           # YJ4 マッチのみ
             for m in matches:
-                for c in cats:
-                    if c["name"] == m["category"] and c.get("condition"):
-                        conds.append((m["category"], c["condition"]))
+                is_yj4 = m["rule"].startswith("yj4")
+                cat = cat_info.get(m["category"])
+                has_cond = bool(cat and cat.get("condition"))
+                if is_yj4:
+                    yj4_only.append(m)
+                elif has_cond:
+                    specific_with_cond.append((m, cat.get("condition")))
+                else:
+                    specific_no_cond.append(m)
 
-            # 具体マッチ（alias/substring/ingredient_list）が1件以上あれば○の候補
-            has_specific = any(not m["rule"].startswith("yj4") for m in matches)
-            has_yj4_only = all(m["rule"].startswith("yj4") for m in matches)
-
-            if conds:
-                # 条件付きカテゴリに該当 → △（条件を verbatim 表示）
+            if specific_no_cond:
+                # 告示に具体的カテゴリ名で無条件記載 → ○（優先）
+                gaika = "○"
+                cats_str = "/".join(m["category"] for m in specific_no_cond)
+                rules_str = ",".join(m["rule"] for m in specific_no_cond)
+                gaika_reason = f"告示第十第一号 [{cats_str}] に該当（{rules_str}）"
+                stats["○"] += 1
+            elif specific_with_cond:
+                # 具体マッチは条件付きのみ → △（条件を verbatim 表示）
                 gaika = "△"
-                cond_str = " / ".join(f"[{n}]:{c}" for n, c in conds)
+                cond_str = " / ".join(f"[{m['category']}]:{c}" for m, c in specific_with_cond)
+                cats_str = "/".join(m["category"] for m, _ in specific_with_cond)
                 gaika_reason = (
-                    f"告示第十第一号 [{'/'.join(cat_list)}] "
+                    f"告示第十第一号 [{cats_str}] "
                     f"該当（要確認: 告示に条件記載あり）{cond_str}"
                 )
                 stats["△"] = stats.get("△", 0) + 1
-            elif has_specific:
-                # 具体マッチ + 条件なし → ○
-                gaika = "○"
-                gaika_reason = (
-                    f"告示第十第一号 [{'/'.join(cat_list)}] "
-                    f"に該当（{','.join(rules)}）"
-                )
-                stats["○"] += 1
-            elif has_yj4_only:
+            elif yj4_only:
                 # YJ薬効分類コードのみでマッチ → △（包括分類名記載のため個別確認必要）
                 gaika = "△"
+                cats_str = "/".join(m["category"] for m in yj4_only)
+                codes = ",".join(m["stem"] for m in yj4_only)
                 gaika_reason = (
-                    f"告示第十第一号 [{'/'.join(cat_list)}] "
-                    f"に薬効分類名で包括記載（YJコード{','.join(m['stem'] for m in matches)}で該当）"
+                    f"告示第十第一号 [{cats_str}] "
+                    f"に薬効分類名で包括記載（YJコード{codes}で該当）"
                     f"※個別品目の臨床適合性・管理料要件を別途確認"
                 )
                 stats["△"] = stats.get("△", 0) + 1
             else:
                 gaika = "○"
-                gaika_reason = f"告示第十第一号 [{'/'.join(cat_list)}] に該当"
+                cats_str = "/".join(m["category"] for m in matches)
+                gaika_reason = f"告示第十第一号 [{cats_str}] に該当"
                 stats["○"] += 1
         else:
             gaika = "×"
