@@ -1,0 +1,422 @@
+{
+  "ソマプシタン（遺伝子組換え）": {
+    "gemini": {
+      "category": "ヒト成長ホルモン剤",
+      "confidence": "high",
+      "reason": "ソマプシタンは長時間作用型のヒト成長ホルモンアナログであり、ヒト成長ホルモン剤に分類されるため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "low",
+      "reason": "告示一覧に該当するカテゴリが見当たらない"
+    }
+  },
+  "ソムアトロゴン（遺伝子組換え）": {
+    "gemini": {
+      "category": "ヒト成長ホルモン剤",
+      "confidence": "high",
+      "reason": "ソムアトロゴンは持続性ヒト成長ホルモン製剤であり、薬効分類上「ヒト成長ホルモン剤」のカテゴリに該当するため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "low",
+      "reason": "告示に該当するカテゴリが見当たらないため"
+    }
+  },
+  "ホリトロピンアルファ（遺伝子組換え）": {
+    "gemini": {
+      "category": "性腺刺激ホルモン製剤",
+      "confidence": "high",
+      "reason": "本成分は卵胞刺激ホルモン（FSH）であり、性腺刺激ホルモンに分類されるため。"
+    },
+    "gpt": {
+      "category": "性腺刺激ホルモン製剤",
+      "confidence": "high",
+      "reason": "ホリトロピンアルファは性腺刺激ホルモン製剤に該当"
+    }
+  },
+  "フォリトロピン　ベータ（遺伝子組換え）": {
+    "gemini": {
+      "category": "性腺刺激ホルモン製剤",
+      "confidence": "high",
+      "reason": "卵胞刺激ホルモン（FSH）であり、性腺刺激ホルモン製剤に分類されるため。"
+    },
+    "gpt": {
+      "category": "性腺刺激ホルモン製剤",
+      "confidence": "high",
+      "reason": "フォリトロピンは性腺刺激ホルモンに該当"
+    }
+  },
+  "アルプロスタジル": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "アルプロスタジルはPGE1製剤であり、告示のプロスタグランジンI2製剤とは異なる。他に該当するカテゴリもないため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "ゴナドレリン酢酸塩": {
+    "gemini": {
+      "category": "性腺刺激ホルモン放出ホルモン剤",
+      "confidence": "high",
+      "reason": "ゴナドレリンは性腺刺激ホルモン放出ホルモン(GnRH)の合成アナログであり、当該カテゴリに明確に該当するため。"
+    },
+    "gpt": {
+      "category": "性腺刺激ホルモン放出ホルモン剤",
+      "confidence": "high",
+      "reason": "ゴナドレリンは性腺刺激ホルモン放出ホルモンに該当"
+    }
+  },
+  "ガニレリクス酢酸塩": {
+    "gemini": {
+      "category": "ゴナドトロピン放出ホルモン誘導体",
+      "confidence": "high",
+      "reason": "GnRHアンタゴニストであり、ゴナドトロピン放出ホルモン誘導体に含まれるため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示カテゴリ一覧にガニレリクス酢酸塩は含まれないため"
+    }
+  },
+  "セトロレリクス酢酸塩": {
+    "gemini": {
+      "category": "ゴナドトロピン放出ホルモン誘導体",
+      "confidence": "high",
+      "reason": "本成分はGnRHアンタゴニストであり、薬理学的にゴナドトロピン放出ホルモン誘導体に分類されるため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "ジノプロスト": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示カテゴリ一覧に記載がない。プロスタグランジンI2製剤とは薬理学的に異なるため該当しない。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "グルコン酸カルシウム水和物": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high",
+      "reason": "グルコン酸カルシウム水和物は、カルシウムを補給する代表的な電解質製剤であり、告示のカテゴリに該当するため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号のカテゴリに該当しない"
+    }
+  },
+  "塩化カルシウム水和物": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high",
+      "reason": "塩化カルシウム水和物は電解質であり、これを主成分とする注射薬は電解質製剤に該当するため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "塩化カリウム": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high",
+      "reason": "塩化カリウムは代表的な電解質であり、告示の「電解質製剤」カテゴリに包含されるため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に塩化カリウムは記載されていないため"
+    }
+  },
+  "Ｌ－アスパラギン酸カリウム": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high",
+      "reason": "Ｌ－アスパラギン酸カリウムはカリウムを補給する電解質製剤であり、告示の包括的なカテゴリに該当する。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "アスパラギン酸カリウム・マグネシウム": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high",
+      "reason": "カリウムとマグネシウムを補給する薬剤であり、電解質製剤に分類されるため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示カテゴリ一覧に該当なし"
+    }
+  },
+  "塩化ナトリウム": {
+    "gemini": {
+      "category": "生理食塩水",
+      "confidence": "high",
+      "reason": "生理食塩水の主成分は塩化ナトリウムであり、告示カテゴリに「生理食塩水」が明記されているため。"
+    },
+    "gpt": {
+      "category": "生理食塩水",
+      "confidence": "high",
+      "reason": "告示に生理食塩水として記載あり"
+    }
+  },
+  "トロンボモデュリンアルファ（遺伝子組換え）": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示原文の一覧に当該成分や、それを包含するカテゴリの記載がないため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示一覧に該当するカテゴリがないため"
+    }
+  },
+  "チサゲンレクルユーセル": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "薬理分類上は抗悪性腫瘍剤だが、本告示が定める在宅自己注射可能な薬剤には該当しないため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "アキシカブタゲン　シロルユーセル": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示は在宅自己注射可能な薬剤を定めているが、本成分は医療機関で投与される薬剤であり、対象外のため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "リソカブタゲン　マラルユーセル": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "薬理作用上は抗悪性腫瘍剤だが、在宅自己注射の対象薬ではないため、本告示のリストには該当しない。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号のカテゴリに該当しない"
+    }
+  },
+  "テセルパツレブ": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示原文およびカテゴリ一覧に「テセルパツレブ」の記載が見当たらないため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示カテゴリ一覧に該当成分が存在しないため"
+    }
+  },
+  "イデカブタゲン　ビクルユーセル": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "本告示は在宅自己注射可能な薬剤が対象。本成分は医療機関での投与が必須であり、対象外のため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "乾燥濃縮人血液凝固第Ⅸ因子  YJ4: 6343  例: 乾燥濃縮人血液凝固第Ⅸ因子": {
+    "gemini": {
+      "category": "乾燥人血液凝固第Ⅸ因子製剤",
+      "confidence": "high",
+      "reason": "告示原文に「乾燥人血液凝固第Ⅸ因子製剤」の記載があり、本成分はこれに該当するため。"
+    },
+    "gpt": {
+      "category": "乾燥人血液凝固第Ⅸ因子製剤",
+      "confidence": "high",
+      "reason": "告示に逐字一致するカテゴリが存在するため"
+    }
+  },
+  "乾燥濃縮人活性化プロテインＣ  YJ4: 6343  例: 注射用アナクトＣ２，５００単位": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示原文に「乾燥濃縮人プロテインC製剤」はあるが、「活性化」された製剤の記載はないため。"
+    },
+    "gpt": {
+      "category": "乾燥濃縮人プロテインC製剤",
+      "confidence": "high",
+      "reason": "告示カテゴリ一覧に逐字一致するため"
+    }
+  },
+  "ｐＨ４処理酸性人免疫グロブリン（皮下注射）  YJ4: 6343  例: ハイゼントラ２０％皮下注１ｇ／５ｍＬ": {
+    "gemini": {
+      "category": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+      "confidence": "high",
+      "reason": "告示原文及びカテゴリ一覧に「pH4処理酸性人免疫グロブリン(皮下注射)製剤」の記載があり、完全に一致するため。"
+    },
+    "gpt": {
+      "category": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+      "confidence": "high",
+      "reason": "告示に逐字一致するカテゴリが存在するため"
+    }
+  },
+  "ロノクトコグ　アルファ（遺伝子組換え）  YJ4: 6343  例: エイフスチラ静注用５００": {
+    "gemini": {
+      "category": "遺伝子組換え型血液凝固第Ⅷ因子製剤",
+      "confidence": "high",
+      "reason": "遺伝子組換え技術で製造された血液凝固第Ⅷ因子製剤であり、告示のカテゴリ名と完全に一致するため。"
+    },
+    "gpt": {
+      "category": "遺伝子組換え型血液凝固第Ⅷ因子製剤",
+      "confidence": "high",
+      "reason": "遺伝子組換え型血液凝固第Ⅷ因子製剤に該当"
+    }
+  },
+  "エフアネソクトコグ　アルファ（遺伝子組換え）  YJ4: 6343  例: オルツビーオ静注用２５０": {
+    "gemini": {
+      "category": "遺伝子組換え型血液凝固第Ⅷ因子製剤",
+      "confidence": "high",
+      "reason": "本成分は血友病A治療薬であり、遺伝子組換え型血液凝固第Ⅷ因子製剤に分類されるため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "low",
+      "reason": "告示に該当するカテゴリが見当たらない"
+    }
+  },
+  "スソクトコグ　アルファ（遺伝子組換え）  YJ4: 6343  例: オビザー静注用５００": {
+    "gemini": {
+      "category": "遺伝子組換え型血液凝固第Ⅷ因子製剤",
+      "confidence": "high",
+      "reason": "本成分は遺伝子組換え血液凝固第VIII因子製剤であり、告示のカテゴリ名と一致するため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "ｐＨ４処理酸性人免疫グロブリン（皮下注射）・ボルヒアルロニダーゼ　アルファ（遺伝子組換え）  YJ4: 6343  例: ハイキュービア１０％皮下注セット５ｇ／５０ｍＬ": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "配合剤であり、告示カテゴリ一覧に逐字一致する記載がないため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示カテゴリ一覧に逐字一致する項目がないため"
+    }
+  },
+  "テセロイキン（遺伝子組換え）  YJ4: 6399  例: イムネース注３５": {
+    "gemini": {
+      "category": "抗悪性腫瘍剤",
+      "confidence": "high",
+      "reason": "本剤は腎細胞癌の治療に用いられる免疫賦活薬であり、抗悪性腫瘍剤に分類されるため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示カテゴリ一覧に該当成分がないため"
+    }
+  },
+  "乾燥濃縮人血液凝固第Ⅸ因子": {
+    "gemini": {
+      "category": "乾燥人血液凝固第Ⅸ因子製剤",
+      "confidence": "high",
+      "reason": "告示原文の「乾燥人血液凝固第Ⅸ因子製剤」に該当。薬学的に同一カテゴリと解釈されるため。"
+    },
+    "gpt": {
+      "category": "乾燥人血液凝固第Ⅸ因子製剤",
+      "confidence": "high",
+      "reason": "告示に逐字一致するカテゴリが存在するため"
+    }
+  },
+  "ｐＨ４処理酸性人免疫グロブリン（皮下注射）": {
+    "gemini": {
+      "category": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+      "confidence": "high",
+      "reason": "告示原文及びカテゴリ一覧に「pH4処理酸性人免疫グロブリン(皮下注射)製剤」として明確な記載があるため。"
+    },
+    "gpt": {
+      "category": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+      "confidence": "high",
+      "reason": "告示に逐字一致するカテゴリが存在するため"
+    }
+  },
+  "メトロニダゾール": {
+    "gemini": {
+      "category": "注射用抗菌薬",
+      "confidence": "high",
+      "reason": "メトロニダゾールは抗菌薬であり、告示に包括的に規定されている「注射用抗菌薬」に該当するため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "スルファメトキサゾール・トリメトプリム": {
+    "gemini": {
+      "category": "注射用抗菌薬",
+      "confidence": "high",
+      "reason": "本成分は薬理分類上の抗菌薬であり、告示の包括的なカテゴリ「注射用抗菌薬」に該当するため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号に該当するカテゴリがないため"
+    }
+  },
+  "エフガルチギモド　アルファ（遺伝子組換え）": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示には配合剤の記載はあるが、判定対象の単剤の記載はないため。"
+    },
+    "gpt": {
+      "category": "エフガルチギモド　アルファ・ボルヒアルロニダーゼ　アルファ配合剤",
+      "confidence": "medium",
+      "reason": "告示カテゴリに類似名が存在するが完全一致ではないため"
+    }
+  },
+  "レミフェンタニル塩酸塩": {
+    "gemini": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示第十第一号のリストに、本成分名及び該当する上位カテゴリの記載がないため。"
+    },
+    "gpt": {
+      "category": null,
+      "confidence": "high",
+      "reason": "告示にレミフェンタニル塩酸塩の記載なし"
+    }
+  }
+}

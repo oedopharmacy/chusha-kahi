@@ -1,0 +1,2042 @@
+{
+  "インスリン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "インスリン製剤は、在宅自己注射の代表的な薬剤であり、在宅自己注射指導管理料等の算定対象として、院外処方箋による処方が広く認められています。告示第十第一号に「インスリン製剤」と明記されており、院外処方を制限する条件は付されていないため、無条件で院外処方可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "インスリン製剤",
+    "kokuji_condition": ""
+  },
+  "ヒト成長ホルモン剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "ヒト成長ホルモン剤は、告示第十第一号に「保険医が投与することができる注射薬」として明記されており、自己注射が一般的に行われる薬剤であるため、院外処方箋での処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ヒト成長ホルモン剤",
+    "kokuji_condition": ""
+  },
+  "遺伝子組換え活性型血液凝固第Ⅶ因子製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「遺伝子組換え活性型血液凝固第Ⅶ因子製剤」が保険医が投与できる注射薬として明確に列挙されており、院外処方を制限する条件は付されていないため、院外処方箋での処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "遺伝子組換え活性型血液凝固第Ⅶ因子製剤",
+    "kokuji_condition": ""
+  },
+  "乾燥濃縮人血液凝固第Ⅹ因子加活性化第Ⅶ因子製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「乾燥濃縮人血液凝固第Ⅹ因子加活性化第Ⅶ因子製剤」が保険医が投与できる注射薬として明確に列挙されており、在宅医療での使用が想定されるため、院外処方箋による交付が可能です。告示上、特別な条件も付されていません。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "乾燥濃縮人血液凝固第Ⅹ因子加活性化第Ⅶ因子製剤",
+    "kokuji_condition": ""
+  },
+  "乾燥人血液凝固第Ⅷ因子製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "乾燥人血液凝固第Ⅷ因子製剤は、厚生労働省告示第107号第十第一号において「保険医が投与することができる注射薬」として具体的に列挙されています。この告示は、在宅医療等で医師が患家で投与する、または患者が自己注射する注射薬の院外処方を認めるものであり、本製剤には特別な条件が付されていないため、無条件で院外処方可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "乾燥人血液凝固第Ⅷ因子製剤",
+    "kokuji_condition": ""
+  },
+  "遺伝子組換え型血液凝固第Ⅷ因子製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「遺伝子組換え型血液凝固第Ⅷ因子製剤」が保険医が投与できる注射薬として明記されており、自己注射が一般的な薬剤であるため、院外処方箋による処方が無条件で可能と判断される。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "遺伝子組換え型血液凝固第Ⅷ因子製剤",
+    "kokuji_condition": ""
+  },
+  "乾燥人血液凝固第Ⅸ因子製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号において「乾燥人血液凝固第Ⅸ因子製剤」が保険医が投与できる注射薬として具体的に明記されており、院外処方に関する特段の制限や条件が記載されていないため、院外処方箋での処方が可能です。血友病治療薬として自己注射が広く行われている実態も踏まえます。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "乾燥人血液凝固第Ⅸ因子製剤",
+    "kokuji_condition": ""
+  },
+  "遺伝子組換え型血液凝固第Ⅸ因子製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「遺伝子組換え型血液凝固第Ⅸ因子製剤」が明記されており、院外処方を制限する条件は付されていません。血友病治療薬として在宅での自己注射が一般的であり、在宅自己注射指導管理料の対象薬剤として院外処方箋による交付が想定されます。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "遺伝子組換え型血液凝固第Ⅸ因子製剤",
+    "kokuji_condition": ""
+  },
+  "活性化プロトロンビン複合体": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「活性化プロトロンビン複合体」が明確に列挙されており、在宅医療において保険医が投与できる注射薬として指定されています。特別な条件も付されていないため、院外処方箋での処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "活性化プロトロンビン複合体",
+    "kokuji_condition": ""
+  },
+  "乾燥人血液凝固因子抗体迂う回活性複合体": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「乾燥人血液凝固因子抗体迂う回活性複合体」が具体的な名称で明記されており、在宅医療における自己注射や訪問看護師による投与が広く認められているため、院外処方箋での処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "乾燥人血液凝固因子抗体迂う回活性複合体",
+    "kokuji_condition": ""
+  },
+  "性腺刺激ホルモン放出ホルモン剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「性腺刺激ホルモン放出ホルモン剤」が明確に列挙されており、在宅医療において保険医が投与できる注射薬として、院外処方箋での交付に特段の条件が示されていないため、無条件で院外処方可能と判断される。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "性腺刺激ホルモン放出ホルモン剤",
+    "kokuji_condition": ""
+  },
+  "性腺刺激ホルモン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「性腺刺激ホルモン製剤」が明確に列挙されており、院外処方箋での処方を制限する特段の条件が記載されていないため、医師が患者宅で投与する目的で院外処方箋により薬局から払い出すことが可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "性腺刺激ホルモン製剤",
+    "kokuji_condition": ""
+  },
+  "ゴナドトロピン放出ホルモン誘導体": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "「療担規則及び薬担規則並びに療担基準に基づき厚生労働大臣が定める掲示事項等」の第十第一号に「ゴナドトロピン放出ホルモン誘導体」が明確に列挙されており、かつ告示上、院外処方に関する特段の条件が付されていないため、無条件で院外処方箋による処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ゴナドトロピン放出ホルモン誘導体",
+    "kokuji_condition": ""
+  },
+  "ソマトスタチンアナログ": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "「療担規則及び薬担規則並びに療担基準に基づき厚生労働大臣が定める掲示事項等」第十第一号に「ソマトスタチンアナログ」が明確に列挙されており、投与に関する特段の条件が記載されていないため、院外処方箋での処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ソマトスタチンアナログ",
+    "kokuji_condition": ""
+  },
+  "顆か粒球コロニー形成刺激因子製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "「顆粒球コロニー形成刺激因子製剤」は、告示第十第一号に保険医が在宅医療において患家で投与できる注射薬として明記されており、特別な条件や制限の記載がないため、院外処方箋による処方も可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "顆か粒球コロニー形成刺激因子製剤",
+    "kokuji_condition": ""
+  },
+  "自己連続携行式腹膜灌かん流用灌かん流液": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「自己連続携行式腹膜灌かん流用灌かん流液」が明確に列挙されており、在宅医療における自己管理を前提とした薬剤であるため、院外処方箋による処方が無条件で可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "自己連続携行式腹膜灌かん流用灌かん流液",
+    "kokuji_condition": ""
+  },
+  "在宅中心静脈栄養法用輸液": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「在宅中心静脈栄養法用輸液」と明記されており、在宅医療における継続的な使用が前提であるため、院外処方箋による薬局からの供給が一般的かつ適切です。特定の条件も付されていないため、無条件で院外処方可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "在宅中心静脈栄養法用輸液",
+    "kokuji_condition": ""
+  },
+  "インターフェロンアルファ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「インターフェロンアルファ製剤」が保険医が投与することができる注射薬として明記されており、院外処方に関する特段の制限がないため、無条件で院外処方可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "インターフェロンアルファ製剤",
+    "kokuji_condition": ""
+  },
+  "インターフェロンベータ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「インターフェロンベータ製剤」が明確に列挙されており、かつ使用条件が特に付されていないため、在宅自己注射の対象として院外処方箋での処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "インターフェロンベータ製剤",
+    "kokuji_condition": ""
+  },
+  "ブプレノルフィン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ブプレノルフィン製剤」が保険医が投与することができる注射薬として具体的に列挙されているため、院外処方箋での処方も可能です。特に条件の記載はありません。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ブプレノルフィン製剤",
+    "kokuji_condition": ""
+  },
+  "抗悪性腫瘍剤": {
+    "consensus_verdict": "○",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "△",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「抗悪性腫瘍剤」が保険医が投与することができる注射薬として具体的に列挙されており、院外処方に関する特段の制限は記載されていないため。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "抗悪性腫瘍剤",
+    "kokuji_condition": ""
+  },
+  "グルカゴン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「グルカゴン製剤」が保険医が投与することができる注射薬として具体的に列挙されており、院外処方に関する特段の制限が記載されていないため。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "グルカゴン製剤",
+    "kokuji_condition": ""
+  },
+  "グルカゴン様ペプチド―1受容体アゴニスト": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「グルカゴン様ペプチド―1受容体アゴニスト」が保険医が投与することができる注射薬として明記されており、院外処方に関する特段の制限がないため。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "グルカゴン様ペプチド―1受容体アゴニスト",
+    "kokuji_condition": ""
+  },
+  "ヒトソマトメジンC製剤": {
+    "consensus_verdict": "○",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "×",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号は「保険医が投与することができる注射薬」を列挙しており、ヒトソマトメジンC製剤はこれに該当する。しかし、院外処方に関する明示的な記載がなく、原則として院内処方が想定されるため、院外処方は不可と判断される。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ヒトソマトメジンC製剤",
+    "kokuji_condition": ""
+  },
+  "人工腎臓用透析液": {
+    "consensus_verdict": "△",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "△",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示上、「在宅血液透析を行っている患者に対して使用する場合に限る」という条件が付されているため、無条件での院外処方はできません。この条件を満たす場合に限り、院外処方が可能です。",
+    "reason_why_gpt": "在宅血液透析患者に対して使用する場合に限り、院外処方が可能とされている。",
+    "method_gemini": "在宅血液透析患者であることを確認し、処方箋にその旨を明記する必要があります。また、訪問診療における薬剤管理指導料や、在宅患者訪問薬剤管理指導料等の算定が考えられます。処方箋には、薬剤名、用法・用量に加え、「在宅血液透析患者用」等の記載が求められる可能性があります。",
+    "method_gpt": "在宅血液透析を行っている患者に限り、医師の指示に基づき処方可能。処方箋には患者が在宅血液透析を行っている旨を明記する必要がある。",
+    "source_text": "人工腎臓用透析液(在宅血液透析を行っている患者に対して使用する場合に限る。)",
+    "kokuji_condition": "在宅血液透析を行っている患者(以下「在宅血液透析患者」という。)に対して使用する場合に限る。"
+  },
+  "血液凝固阻止剤": {
+    "consensus_verdict": "△",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "△",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示上、「在宅血液透析患者に対して使用する場合に限る」という条件が付されているため、無条件での院外処方は不可。条件を満たす場合に限り処方可能。",
+    "reason_why_gpt": "在宅血液透析患者に対して使用する場合に限り、院外処方が可能とされている。",
+    "method_gemini": "在宅血液透析患者であることを確認し、処方箋にその旨を明記する必要がある。訪問診療における薬剤費算定は、院内処方と同様の扱いとなる。管理料等については、個別の算定要件を確認する必要がある。",
+    "method_gpt": "在宅血液透析を行っている患者に限り、医師の指示に基づき処方可能。処方箋には患者が在宅血液透析を行っている旨を明記する必要がある。",
+    "source_text": "血液凝固阻止剤(在宅血液透析患者に対して使用する場合に限る。)",
+    "kokuji_condition": "在宅血液透析患者に対して使用する場合に限る。"
+  },
+  "生理食塩水": {
+    "consensus_verdict": "△",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示上、生理食塩水は「在宅血液透析患者に対して使用する場合及び本号に掲げる注射薬を投与するに当たりその溶解又は希釈に用いる場合に限る」と条件付きで列挙されているため、これらの条件を満たす場合に限り院外処方が可能と判断される。",
+    "reason_why_gpt": "在宅血液透析患者に対して使用する場合及び特定の注射薬の溶解又は希釈に用いる場合に限り、院外処方が可能とされている。",
+    "method_gemini": "在宅血液透析患者への使用、または他の告示対象注射薬の溶解・希釈目的での使用に限定される。処方箋には、使用目的（例：「在宅血液透析用」「溶解・希釈用」）を明記することが望ましい。算定管理料としては、在宅患者訪問薬剤管理指導料などが考えられる。",
+    "method_gpt": "在宅血液透析患者に対して使用する場合、または特定の注射薬の溶解・希釈に用いる場合に限り処方可能。処方箋には使用目的を明記する必要がある。",
+    "source_text": "生理食塩水(在宅血液透析患者に対して使用する場合及び本号に掲げる注射薬を投与するに当たりその溶解又は希釈に用いる場合に限る。)",
+    "kokuji_condition": "在宅血液透析患者に対して使用する場合及び本号に掲げる注射薬を投与するに当たりその溶解又は希釈に用いる場合に限る。"
+  },
+  "プロスタグランジンI2製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「プロスタグランジンI2製剤」が保険医が投与することができる注射薬として明記されており、院外処方に関する特段の制限がないため、無条件で院外処方可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "プロスタグランジンI2製剤",
+    "kokuji_condition": ""
+  },
+  "モルヒネ塩酸塩製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「モルヒネ塩酸塩製剤」が保険医が投与することができる注射薬として具体的に列挙されており、院外処方に関する特段の制限記載がないため。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "モルヒネ塩酸塩製剤",
+    "kokuji_condition": ""
+  },
+  "エタネルセプト製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「エタネルセプト製剤」が保険医が投与することができる注射薬として具体的に列挙されており、院外処方に関する特別な制限の記載がないため、無条件で院外処方可能と判断される。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "エタネルセプト製剤",
+    "kokuji_condition": ""
+  },
+  "注射用水": {
+    "consensus_verdict": "△",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示上、「本号に掲げる注射薬を投与するに当たりその溶解又は希釈に用いる場合に限る」という条件が付されているため、単独での処方は想定されておらず、他の注射薬との併用が前提となる。そのため、無条件での院外処方とは言えない。",
+    "reason_why_gpt": "告示において、特定の注射薬を投与する際の溶解または希釈に用いる場合に限り使用可能とされているため。",
+    "method_gemini": "院外処方箋で「注射用水」を処方する場合、必ず他の注射薬と併記し、溶解・希釈に用いる旨を処方箋に明記する必要がある。例えば、処方箋の摘要欄に「〇〇製剤溶解用」などと記載することが考えられる。算定管理料としては、薬剤料に加え、調剤料や薬学管理料などが適用される可能性がある。",
+    "method_gpt": "注射用水は、告示第十第一号に掲げる注射薬を投与する際に、その溶解または希釈に用いる場合に限り、訪問薬局経由での処方が可能。処方箋には使用目的を明記し、該当する注射薬と併せて処方する必要がある。",
+    "source_text": "注射用水(本号に掲げる注射薬を投与するに当たりその溶解又は希釈に用いる場合に限る。)",
+    "kokuji_condition": "本号に掲げる注射薬を投与するに当たりその溶解又は希釈に用いる場合に限る。"
+  },
+  "ペグビソマント製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ペグビソマント製剤」が保険医が投与することができる注射薬として具体的に列挙されているため、院外処方箋での処方が可能です。特に条件の記載はありません。",
+    "reason_why_gpt": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ペグビソマント製剤",
+    "kokuji_condition": ""
+  },
+  "スマトリプタン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "スマトリプタン製剤は、告示第十第一号に「保険医が投与することができる注射薬」として具体的に列挙されており、院外処方に関する特別な制限は記載されていないため、無条件で院外処方可能です。",
+    "reason_why_gpt": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "スマトリプタン製剤",
+    "kokuji_condition": ""
+  },
+  "フェンタニルクエン酸塩製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「フェンタニルクエン酸塩製剤」が保険医が投与することができる注射薬として具体的に列挙されており、院外処方に関する特段の制限記載がないため。",
+    "reason_why_gpt": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "フェンタニルクエン酸塩製剤",
+    "kokuji_condition": ""
+  },
+  "複方オキシコドン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「複方オキシコドン製剤」が保険医が投与することができる注射薬として具体的に列挙されており、院外処方に関する制限の記載がないため。",
+    "reason_why_gpt": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "複方オキシコドン製剤",
+    "kokuji_condition": ""
+  },
+  "ベタメタゾンリン酸エステルナトリウム製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ベタメタゾンリン酸エステルナトリウム製剤」が保険医が投与することができる注射薬として明記されており、院外処方に関する特段の制限記載がないため、無条件で院外処方可能と判断される。",
+    "reason_why_gpt": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ベタメタゾンリン酸エステルナトリウム製剤",
+    "kokuji_condition": ""
+  },
+  "デキサメタゾンリン酸エステルナトリウム製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「デキサメタゾンリン酸エステルナトリウム製剤」が保険医が投与することができる注射薬として明記されており、院外処方に関する特段の制限がないため、無条件で院外処方可能です。",
+    "reason_why_gpt": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "デキサメタゾンリン酸エステルナトリウム製剤",
+    "kokuji_condition": ""
+  },
+  "デキサメタゾンメタスルホ安息香酸エステルナトリウム製剤": {
+    "consensus_verdict": "○",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "?",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「デキサメタゾンメタスルホ安息香酸エステルナトリウム製剤」が明記されており、保険医が投与できる注射薬として列挙されているため、院外処方可能です。特に条件の記載はありません。",
+    "reason_why_gpt": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "デキサメタゾンメタスルホ安息香酸エステルナトリウム製剤",
+    "kokuji_condition": ""
+  },
+  "プロトンポンプ阻害剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「プロトンポンプ阻害剤」として明記されており、在宅で保険医が投与できる注射薬に該当するため院外処方箋による交付が可能。特別な条件は付されていない。",
+    "reason_why_gpt": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "プロトンポンプ阻害剤",
+    "kokuji_condition": ""
+  },
+  "H2遮断剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「H2遮断剤」として明記されており、在宅で保険医が投与できる注射薬に該当するため院外処方箋による交付が可能。特別な条件は付されていない。",
+    "reason_why_gpt": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "H2遮断剤",
+    "kokuji_condition": ""
+  },
+  "カルバゾクロムスルホン酸ナトリウム製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「カルバゾクロムスルホン酸ナトリウム製剤」として明記されており、在宅で保険医が投与できる注射薬に該当するため院外処方箋による交付が可能。特別な条件は付されていない。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "カルバゾクロムスルホン酸ナトリウム製剤",
+    "kokuji_condition": ""
+  },
+  "トラネキサム酸製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「トラネキサム酸製剤」として明記されており、在宅で保険医が投与できる注射薬に該当するため院外処方箋による交付が可能。特別な条件は付されていない。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "トラネキサム酸製剤",
+    "kokuji_condition": ""
+  },
+  "フルルビプロフェンアキセチル製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「フルルビプロフェンアキセチル製剤」として明記されており、在宅で保険医が投与できる注射薬に該当するため院外処方箋による交付が可能。特別な条件は付されていない。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "フルルビプロフェンアキセチル製剤",
+    "kokuji_condition": ""
+  },
+  "メトクロプラミド製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「メトクロプラミド製剤」として明記されており、在宅で保険医が投与できる注射薬に該当するため院外処方箋による交付が可能。特別な条件は付されていない。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "メトクロプラミド製剤",
+    "kokuji_condition": ""
+  },
+  "プロクロルペラジン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「プロクロルペラジン製剤」として明記されており、在宅で保険医が投与できる注射薬に該当するため院外処方箋による交付が可能。特別な条件は付されていない。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "プロクロルペラジン製剤",
+    "kokuji_condition": ""
+  },
+  "ブチルスコポラミン臭化物製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ブチルスコポラミン臭化物製剤」として明記されており、在宅で保険医が投与できる注射薬に該当するため院外処方箋による交付が可能。特別な条件は付されていない。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ブチルスコポラミン臭化物製剤",
+    "kokuji_condition": ""
+  },
+  "グリチルリチン酸モノアンモニウム・グリシン・L―システイン塩酸塩配合剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に本配合剤が明記されており、在宅で保険医が投与できる注射薬に該当するため院外処方箋による交付が可能。特別な条件は付されていない。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "グリチルリチン酸モノアンモニウム・グリシン・L―システイン塩酸塩配合剤",
+    "kokuji_condition": ""
+  },
+  "アダリムマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「アダリムマブ製剤」として明記されており、在宅で保険医が投与できる注射薬に該当するため院外処方箋による交付が可能。特別な条件は付されていない。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アダリムマブ製剤",
+    "kokuji_condition": ""
+  },
+  "エリスロポエチン": {
+    "consensus_verdict": "△",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "△",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示に記載があるが、対象患者が「在宅血液透析又は在宅腹膜灌流を行っている腎性貧血患者」に限定されているため。この条件を満たす場合に限り、在宅自己注射指導管理料の対象として院外処方箋での交付が可能となる。",
+    "reason_why_gpt": "在宅血液透析又は在宅腹膜灌流を行っている患者のうち腎性貧血状態にある場合に限り処方可能。",
+    "method_gemini": "在宅自己注射指導管理料の算定対象。処方箋には、在宅自己注射指導管理料を算定している旨や、対象疾患（腎性貧血）と患者の状態（在宅血液透析等）がわかるように記載することが望ましい。",
+    "method_gpt": "在宅血液透析または在宅腹膜灌流を行っている患者で、腎性貧血状態にある場合に限り処方可能。処方箋には患者の状態と治療法を明記する必要がある。",
+    "source_text": "エリスロポエチン(在宅血液透析又は在宅腹膜灌流を行っている患者のうち腎性貧血状態にあるものに対して使用する場合に限る。)",
+    "kokuji_condition": "在宅血液透析又は在宅腹膜灌かん流を行っている患者のうち腎性貧血状態にあるものに対して使用する場合に限る。"
+  },
+  "ダルベポエチン": {
+    "consensus_verdict": "△",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "△",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示に記載があるが、対象患者が「在宅血液透析又は在宅腹膜灌流を行っている腎性貧血患者」に限定されているため。この条件を満たす場合に限り、在宅自己注射指導管理料の対象として院外処方箋での交付が可能となる。",
+    "reason_why_gpt": "在宅血液透析又は在宅腹膜灌流を行っている患者のうち腎性貧血状態にある場合に限り処方可能。",
+    "method_gemini": "在宅自己注射指導管理料の算定対象。処方箋には、在宅自己注射指導管理料を算定している旨や、対象疾患（腎性貧血）と患者の状態（在宅血液透析等）がわかるように記載することが望ましい。",
+    "method_gpt": "在宅血液透析または在宅腹膜灌流を行っている患者で、腎性貧血状態にある場合に限り処方可能。処方箋には患者の状態と治療法を明記する必要がある。",
+    "source_text": "ダルベポエチン(在宅血液透析又は在宅腹膜灌流を行っている患者のうち腎性貧血状態にあるものに対して使用する場合に限る。)",
+    "kokuji_condition": "在宅血液透析又は在宅腹膜灌かん流を行っている患者のうち腎性貧血状態にあるものに対して使用する場合に限る。"
+  },
+  "テリパラチド製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「テリパラチド製剤」が保険医が投与することができる注射薬として具体的に列挙されており、院外処方に関する特段の制限記載がないため、無条件で院外処方可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "テリパラチド製剤",
+    "kokuji_condition": ""
+  },
+  "アドレナリン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「アドレナリン製剤」が保険医が投与することができる注射薬として列挙されており、特に院外処方に関する制限の記載がないため、無条件で院外処方可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アドレナリン製剤",
+    "kokuji_condition": ""
+  },
+  "ヘパリンカルシウム製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ヘパリンカルシウム製剤」として無条件で列挙されている。在宅自己注射指導管理料の対象薬剤であり、院外処方箋での交付が可能である。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ヘパリンカルシウム製剤",
+    "kokuji_condition": ""
+  },
+  "オキシコドン塩酸塩製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「オキシコドン塩酸塩製剤」として無条件で列挙されている。在宅自己注射指導管理料の対象薬剤であり、院外処方箋での交付が可能である。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "オキシコドン塩酸塩製剤",
+    "kokuji_condition": ""
+  },
+  "アポモルヒネ塩酸塩製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「アポモルヒネ塩酸塩製剤」として無条件で列挙されている。在宅自己注射指導管理料の対象薬剤であり、院外処方箋での交付が可能である。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アポモルヒネ塩酸塩製剤",
+    "kokuji_condition": ""
+  },
+  "セルトリズマブペゴル製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「セルトリズマブペゴル製剤」が保険医が投与することができる注射薬として列挙されており、院外処方に関する特段の制限は記載されていないため、無条件で院外処方可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "セルトリズマブペゴル製剤",
+    "kokuji_condition": ""
+  },
+  "トシリズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「トシリズマブ製剤」として無条件で列挙されている。在宅自己注射指導管理料の対象薬剤であり、院外処方箋での交付が可能である。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "トシリズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "メトレレプチン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「メトレレプチン製剤」として無条件で列挙されている。在宅自己注射指導管理料の対象薬剤であり、院外処方箋での交付が可能である。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "メトレレプチン製剤",
+    "kokuji_condition": ""
+  },
+  "アバタセプト製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「アバタセプト製剤」として無条件で列挙されている。在宅自己注射指導管理料の対象薬剤であり、院外処方箋での交付が可能である。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アバタセプト製剤",
+    "kokuji_condition": ""
+  },
+  "pH4処理酸性人免疫グロブリン(皮下注射)製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「pH4処理酸性人免疫グロブリン(皮下注射)製剤」として無条件で列挙されている。在宅自己注射指導管理料の対象薬剤であり、院外処方箋での交付が可能である。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+    "kokuji_condition": ""
+  },
+  "電解質製剤": {
+    "consensus_verdict": "○",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "△",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示に「電解質製剤」と包括的に記載があるが、これは主に在宅での点滴注射を想定している。在宅自己注射指導管理料の対象ではないため、処方には訪問看護指示書等の明確な根拠が必要となる。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "在宅患者訪問点滴注射指示書に基づき、訪問看護師等が使用する薬剤として処方可能。処方箋には、訪問看護指示に係る処方である旨を記載することが望ましい。医師が直接使用する場合は院内在庫として持参するのが一般的。",
+    "method_gpt": "",
+    "source_text": "電解質製剤",
+    "kokuji_condition": ""
+  },
+  "注射用抗菌薬": {
+    "consensus_verdict": "△",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "△",
+      "gemini": "△",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示には「注射用抗菌薬」と包括的に記載されているが、対象となる薬剤が広範であるため。在宅での使用が医学的に適切であり、患者や家族が安全に手技を行えるかなど、個別の薬剤や症例ごとに医師の判断が必要となる。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "在宅自己注射指導管理料の算定対象となるか、個別の薬剤ごとに確認が必要。処方箋には、在宅医療で用いる旨や、必要に応じて用法・用量に関する詳細な指示を記載することが望ましい。特に複雑な手技を要する場合は、訪問看護指示書等との連携も重要となる。",
+    "method_gpt": "",
+    "source_text": "注射用抗菌薬",
+    "kokuji_condition": ""
+  },
+  "エダラボン製剤": {
+    "consensus_verdict": "△",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "△",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示において「筋萎縮性側索硬化症（ALS）患者に対して使用する場合」という明確な条件が付されているため。この条件を満たさない場合は院外処方できない。処方時には対象疾患の確認が必須となる。",
+    "reason_why_gpt": "筋萎縮性側索硬化症患者に対して使用する場合に限ると条件が付されているため、条件付きで院外処方が可能。",
+    "method_gemini": "処方箋の備考欄等に「在宅自己注射用」「筋萎縮性側索硬化症（ALS）の治療目的」など、保険審査上、適応疾患を満たしていることがわかるように記載することが望ましい。在宅自己注射指導管理料等の算定も考慮される。",
+    "method_gpt": "筋萎縮性側索硬化症患者に限定されるため、診断書や医師の指示書が必要。処方箋には患者の疾患名を明記し、適切な管理料を算定することが求められる。",
+    "source_text": "エダラボン製剤(筋萎縮性側索硬化症患者に対して使用する場合に限る。)",
+    "kokuji_condition": "筋萎縮性側索硬化症患者に対して使用する場合に限る。"
+  },
+  "アスホターゼ　アルファ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されているため、在宅医療の場面で院外処方箋による交付が可能である。在宅自己注射指導管理料の対象薬剤として、医師の指導管理のもと、患者自身や家族による投与が想定される。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アスホターゼ　アルファ製剤",
+    "kokuji_condition": ""
+  },
+  "グラチラマー酢酸塩製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されているため、在宅医療の場面で院外処方箋による交付が可能である。多発性硬化症の治療に用いられ、在宅自己注射指導管理料の対象として、医師の指導のもと使用される。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "グラチラマー酢酸塩製剤",
+    "kokuji_condition": ""
+  },
+  "脂肪乳剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されているため、院外処方箋による交付が可能である。主に在宅中心静脈栄養法（HPN）において、エネルギー補給を目的として輸液に混合して使用される。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "脂肪乳剤",
+    "kokuji_condition": ""
+  },
+  "セクキヌマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されているため、在宅医療の場面で院外処方箋による交付が可能である。在宅自己注射指導管理料の対象薬剤として、医師の指導管理のもと、患者自身や家族による投与が想定される。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "セクキヌマブ製剤",
+    "kokuji_condition": ""
+  },
+  "エボロクマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されているため、在宅医療の場面で院外処方箋による交付が可能である。在宅自己注射指導管理料の対象薬剤として、医師の指導管理のもと、患者自身や家族による投与が想定される。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "エボロクマブ製剤",
+    "kokuji_condition": ""
+  },
+  "ブロダルマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されているため、在宅医療の場面で院外処方箋による交付が可能である。在宅自己注射指導管理料の対象薬剤として、医師の指導管理のもと、患者自身や家族による投与が想定される。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ブロダルマブ製剤",
+    "kokuji_condition": ""
+  },
+  "アリロクマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "?",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されているため、在宅医療の場面で院外処方箋による交付が可能である。在宅自己注射指導管理料の対象薬剤として、医師の指導管理のもと、患者自身や家族による投与が想定される。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アリロクマブ製剤",
+    "kokuji_condition": ""
+  },
+  "ベリムマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されているため、在宅医療の場面で院外処方箋による交付が可能である。在宅自己注射指導管理料の対象薬剤として、医師の指導管理のもと、患者自身や家族による投与が想定される。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ベリムマブ製剤",
+    "kokuji_condition": ""
+  },
+  "イキセキズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「イキセキズマブ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が可能です。告示上で特段の条件は付されていません。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "イキセキズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "ゴリムマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ゴリムマブ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が可能です。告示上で特段の条件は付されていません。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ゴリムマブ製剤",
+    "kokuji_condition": ""
+  },
+  "エミシズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「エミシズマブ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が可能です。告示上で特段の条件は付されていません。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "エミシズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "イカチバント製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「イカチバント製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が可能です。告示上で特段の条件は付されていません。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "イカチバント製剤",
+    "kokuji_condition": ""
+  },
+  "サリルマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「サリルマブ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が可能です。告示上で特段の条件は付されていません。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "サリルマブ製剤",
+    "kokuji_condition": ""
+  },
+  "デュピルマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「デュピルマブ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が可能です。告示上で特段の条件は付されていません。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "デュピルマブ製剤",
+    "kokuji_condition": ""
+  },
+  "ヒドロモルフォン塩酸塩製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ヒドロモルフォン塩酸塩製剤」が明記されており、在宅患者訪問点滴注射管理指導料等の対象薬剤として院外処方が可能です。麻薬のため管理に注意が必要です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ヒドロモルフォン塩酸塩製剤",
+    "kokuji_condition": ""
+  },
+  "インスリン・グルカゴン様ペプチド―1受容体アゴニスト配合剤": {
+    "consensus_verdict": "○",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示第十第一号に「インスリン・グルカゴン様ペプチド―1受容体アゴニスト配合剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が可能です。",
+    "reason_why_gpt": "告示に具体的な記載がないが、関連する成分が含まれているため、条件付きで可能と判断。",
+    "method_gemini": "",
+    "method_gpt": "インスリン製剤およびグルカゴン様ペプチド-1受容体アゴニストが告示に記載されているため、これらの成分を含む配合剤も条件付きで処方可能と考えられる。具体的な処方条件は医師の判断に依存する。",
+    "source_text": "インスリン製剤、グルカゴン様ペプチド―1受容体アゴニスト",
+    "kokuji_condition": ""
+  },
+  "ヒドロコルチゾンコハク酸エステルナトリウム製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ヒドロコルチゾンコハク酸エステルナトリウム製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ヒドロコルチゾンコハク酸エステルナトリウム製剤",
+    "kokuji_condition": ""
+  },
+  "遺伝子組換えヒトvon Willebrand因子製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「遺伝子組換えヒトvon Willebrand因子製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "遺伝子組換えヒトvon Willebrand因子製剤",
+    "kokuji_condition": ""
+  },
+  "ブロスマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ブロスマブ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められている。告示上で特に使用に関する条件は付されていないため、無条件で処方可能と判断する。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ブロスマブ製剤",
+    "kokuji_condition": ""
+  },
+  "アガルシダーゼ　アルファ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「アガルシダーゼ　アルファ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められている。告示上で特に使用に関する条件は付されていないため、無条件で処方可能と判断する。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アガルシダーゼ　アルファ製剤",
+    "kokuji_condition": ""
+  },
+  "アガルシダーゼ　ベータ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「アガルシダーゼ　ベータ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められている。告示上で特に使用に関する条件は付されていないため、無条件で処方可能と判断する。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アガルシダーゼ　ベータ製剤",
+    "kokuji_condition": ""
+  },
+  "アルグルコシダーゼ　アルファ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「アルグルコシダーゼ　アルファ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められている。告示上で特に使用に関する条件は付されていないため、無条件で処方可能と判断する。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アルグルコシダーゼ　アルファ製剤",
+    "kokuji_condition": ""
+  },
+  "イデュルスルファーゼ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「イデュルスルファーゼ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められている。告示上で特に使用に関する条件は付されていないため、無条件で処方可能と判断する。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "イデュルスルファーゼ製剤",
+    "kokuji_condition": ""
+  },
+  "イミグルセラーゼ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「イミグルセラーゼ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められている。告示上で特に使用に関する条件は付されていないため、無条件で処方可能と判断する。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "イミグルセラーゼ製剤",
+    "kokuji_condition": ""
+  },
+  "エロスルファーゼ　アルファ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「エロスルファーゼ　アルファ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められている。告示上で特に使用に関する条件は付されていないため、無条件で処方可能と判断する。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "エロスルファーゼ　アルファ製剤",
+    "kokuji_condition": ""
+  },
+  "ガルスルファーゼ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ガルスルファーゼ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められている。告示上で特に使用に関する条件は付されていないため、無条件で処方可能と判断する。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ガルスルファーゼ製剤",
+    "kokuji_condition": ""
+  },
+  "セベリパーゼ　アルファ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「セベリパーゼ　アルファ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められている。告示上で特に使用に関する条件は付されていないため、無条件で処方可能と判断する。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "セベリパーゼ　アルファ製剤",
+    "kokuji_condition": ""
+  },
+  "ベラグルセラーゼ　アルファ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に「ベラグルセラーゼ　アルファ製剤」が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められている。告示上で特に使用に関する条件は付されていないため、無条件で処方可能と判断する。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ベラグルセラーゼ　アルファ製剤",
+    "kokuji_condition": ""
+  },
+  "ラロニダーゼ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、在宅自己注射指導管理料等の対象薬剤として院外処方箋による交付が認められています。在宅医療において医師の指示に基づき使用することが可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ラロニダーゼ製剤",
+    "kokuji_condition": ""
+  },
+  "メポリズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、在宅自己注射指導管理料等の対象薬剤として院外処方箋による交付が認められています。在宅医療において医師の指示に基づき使用することが可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "メポリズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "オマリズマブ製剤": {
+    "consensus_verdict": "△",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示第十第一号に列挙されていますが、「季節性アレルギー性鼻炎の治療のために使用する場合を除く」という条件が付されています。この条件に該当しない疾患（気管支喘息等）であれば院外処方が可能です。",
+    "reason_why_gpt": "告示に記載があるが、季節性アレルギー性鼻炎の治療目的では使用不可の条件があるため、条件付きで可能。",
+    "method_gemini": "院外処方箋を発行する際は、摘要欄に在宅自己注射の対象となる疾患名（例：気管支喘息、慢性特発性蕁麻疹）を明記し、季節性アレルギー性鼻炎目的の使用ではないことを示す必要があります。",
+    "method_gpt": "季節性アレルギー性鼻炎以外の治療目的で使用する場合に限り、院外処方が可能。処方箋には使用目的を明記する必要がある。",
+    "source_text": "オマリズマブ製剤(季節性アレルギー性鼻炎の治療のために使用する場合を除く。)",
+    "kokuji_condition": "季節性アレルギー性鼻炎の治療のために使用する場合を除く。"
+  },
+  "テデュグルチド製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、在宅自己注射指導管理料等の対象薬剤として院外処方箋による交付が認められています。在宅医療において医師の指示に基づき使用することが可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "テデュグルチド製剤",
+    "kokuji_condition": ""
+  },
+  "サトラリズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、在宅自己注射指導管理料等の対象薬剤として院外処方箋による交付が認められています。在宅医療において医師の指示に基づき使用することが可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "サトラリズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "ビルトラルセン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、在宅自己注射指導管理料等の対象薬剤として院外処方箋による交付が認められています。在宅医療において医師の指示に基づき使用することが可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ビルトラルセン製剤",
+    "kokuji_condition": ""
+  },
+  "レムデシビル製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、在宅自己注射指導管理料等の対象薬剤として院外処方箋による交付が認められています。在宅医療において医師の指示に基づき使用することが可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "レムデシビル製剤",
+    "kokuji_condition": ""
+  },
+  "ガルカネズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、在宅自己注射指導管理料等の対象薬剤として院外処方箋による交付が認められています。在宅医療において医師の指示に基づき使用することが可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ガルカネズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "オファツムマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、在宅自己注射指導管理料等の対象薬剤として院外処方箋による交付が認められています。在宅医療において医師の指示に基づき使用することが可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "オファツムマブ製剤",
+    "kokuji_condition": ""
+  },
+  "ボソリチド製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、在宅自己注射指導管理料等の対象薬剤として院外処方箋による交付が認められています。在宅医療において医師の指示に基づき使用することが可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ボソリチド製剤",
+    "kokuji_condition": ""
+  },
+  "エレヌマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、在宅自己注射指導管理料の対象薬剤でもあるため、在宅医療における医師の使用を目的とした院外処方が認められています。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "エレヌマブ製剤",
+    "kokuji_condition": ""
+  },
+  "アバロパラチド酢酸塩製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、骨粗鬆症治療薬として在宅自己注射指導管理料の対象でもあるため、在宅医療での使用を目的とした院外処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アバロパラチド酢酸塩製剤",
+    "kokuji_condition": ""
+  },
+  "カプラシズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されており、後天性血栓性血小板減少性紫斑病の治療薬として在宅自己注射指導管理料の対象でもあるため、院外処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "カプラシズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "乾燥濃縮人C1―インアクチベーター製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。遺伝性血管性浮腫（HAE）の治療薬として在宅自己注射指導管理料の対象でもあるため、院外処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "乾燥濃縮人C1―インアクチベーター製剤",
+    "kokuji_condition": ""
+  },
+  "フレマネズマブ製剤": {
+    "consensus_verdict": "△",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示第十第一号に「四週間に一回投与する場合に限る」という条件付きで列挙されているためです。この投与間隔の条件を満たす場合に限り、院外処方が可能となります。",
+    "reason_why_gpt": "告示に条件付きで記載されており、四週間に一回投与する場合に限り院外処方が可能。",
+    "method_gemini": "在宅自己注射指導管理料の対象です。処方箋には、用法・用量として「4週間に1回」投与する旨を明確に記載する必要があります。この条件を満たさない投与方法（例：3か月に1回投与）の場合は院外処方できません。",
+    "method_gpt": "四週間に一回の投与が条件。処方箋には投与間隔を明記し、患者の状態に応じた管理が必要。訪問薬局は投与スケジュールを確認し、適切な管理を行う。",
+    "source_text": "フレマネズマブ製剤(四週間に一回投与する場合に限る。)",
+    "kokuji_condition": "四週間に一回投与する場合に限る。"
+  },
+  "メトトレキサート製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。関節リウマチ等の治療で用いられる在宅自己注射指導管理料の対象薬剤であるため、在宅医療での使用を目的とした院外処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "メトトレキサート製剤",
+    "kokuji_condition": ""
+  },
+  "チルゼパチド製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。2型糖尿病治療薬として在宅自己注射指導管理料の対象薬剤であるため、在宅医療での使用を目的とした院外処方が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "チルゼパチド製剤",
+    "kokuji_condition": ""
+  },
+  "ビメキズマブ製剤": {
+    "consensus_verdict": "△",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示第十第一号に「四週間を超える間隔で投与する場合を除く」という条件付きで列挙されているためです。投与間隔が4週間以内の場合に限り、院外処方が可能となります。",
+    "reason_why_gpt": "告示に条件付きで記載されており、四週間を超えない間隔で投与する場合に限り院外処方が可能。",
+    "method_gemini": "在宅自己注射指導管理料の対象です。処方箋には、用法・用量として投与間隔が4週間以内であることを明確に記載する必要があります。4週間を超える間隔（例：8週間に1回）での投与は院外処方できません。",
+    "method_gpt": "四週間を超えない投与間隔が条件。処方箋には投与間隔を明記し、患者の状態に応じた管理が必要。訪問薬局は投与スケジュールを確認し、適切な管理を行う。",
+    "source_text": "ビメキズマブ製剤(四週間を超える間隔で投与する場合を除く。)",
+    "kokuji_condition": "四週間を超える間隔で投与する場合を除く。"
+  },
+  "ホスレボドパ・ホスカルビドパ水和物配合剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。パーキンソン病治療薬として持続皮下投与で用いられ、在宅での使用が想定されるため、院外処方が認められています。",
+    "reason_why_gpt": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ホスレボドパ・ホスカルビドパ水和物配合剤",
+    "kokuji_condition": ""
+  },
+  "ペグバリアーゼ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。フェニルケトン尿症治療薬として在宅自己注射指導管理料の対象薬剤であるため、在宅医療での使用を目的とした院外処方が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ペグバリアーゼ製剤",
+    "kokuji_condition": ""
+  },
+  "パビナフスプ　アルファ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。在宅自己注射指導管理料等の算定対象として、保険医が投与できる注射薬に該当するため、院外処方箋による交付が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "パビナフスプ　アルファ製剤",
+    "kokuji_condition": ""
+  },
+  "アバルグルコシダーゼ　アルファ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。在宅自己注射指導管理料等の算定対象として、保険医が投与できる注射薬に該当するため、院外処方箋による交付が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "アバルグルコシダーゼ　アルファ製剤",
+    "kokuji_condition": ""
+  },
+  "ラナデルマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。在宅自己注射指導管理料等の算定対象として、保険医が投与できる注射薬に該当するため、院外処方箋による交付が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ラナデルマブ製剤",
+    "kokuji_condition": ""
+  },
+  "ネモリズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。在宅自己注射指導管理料等の算定対象として、保険医が投与できる注射薬に該当するため、院外処方箋による交付が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ネモリズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "ペグセタコプラン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。在宅自己注射指導管理料等の算定対象として、保険医が投与できる注射薬に該当するため、院外処方箋による交付が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ペグセタコプラン製剤",
+    "kokuji_condition": ""
+  },
+  "ジルコプランナトリウム製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。在宅自己注射指導管理料等の算定対象として、保険医が投与できる注射薬に該当するため、院外処方箋による交付が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ジルコプランナトリウム製剤",
+    "kokuji_condition": ""
+  },
+  "コンシズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。在宅自己注射指導管理料等の算定対象として、保険医が投与できる注射薬に該当するため、院外処方箋による交付が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "コンシズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "テゼペルマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。在宅自己注射指導管理料等の算定対象として、保険医が投与できる注射薬に該当するため、院外処方箋による交付が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "テゼペルマブ製剤",
+    "kokuji_condition": ""
+  },
+  "オゾラリズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。在宅自己注射指導管理料等の算定対象として、保険医が投与できる注射薬に該当するため、院外処方箋による交付が可能です。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "オゾラリズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "トラロキヌマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に無条件で列挙されています。在宅自己注射指導管理料等の算定対象として、保険医が投与できる注射薬に該当するため、院外処方箋による交付が可能です。",
+    "reason_why_gpt": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "トラロキヌマブ製剤",
+    "kokuji_condition": ""
+  },
+  "エフガルチギモド　アルファ・ボルヒアルロニダーゼ　アルファ配合剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤名が明記されており、在宅自己注射指導管理料等の算定対象として院外処方が認められています。告示上に特段の条件は付されていません。",
+    "reason_why_gpt": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "エフガルチギモド　アルファ・ボルヒアルロニダーゼ　アルファ配合剤",
+    "kokuji_condition": ""
+  },
+  "ドブタミン塩酸塩製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤名が明記されており、在宅自己注射指導管理料等の算定対象として院外処方が認められています。告示上に特段の条件は付されていません。",
+    "reason_why_gpt": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ドブタミン塩酸塩製剤",
+    "kokuji_condition": ""
+  },
+  "ドパミン塩酸塩製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤名が明記されており、在宅自己注射指導管理料等の算定対象として院外処方が認められています。告示上に特段の条件は付されていません。",
+    "reason_why_gpt": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ドパミン塩酸塩製剤",
+    "kokuji_condition": ""
+  },
+  "ノルアドレナリン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤名が明記されており、在宅自己注射指導管理料等の算定対象として院外処方が認められています。告示上に特段の条件は付されていません。",
+    "reason_why_gpt": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ノルアドレナリン製剤",
+    "kokuji_condition": ""
+  },
+  "ベドリズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤名が明記されており、在宅自己注射指導管理料等の算定対象として院外処方が認められています。告示上に特段の条件は付されていません。",
+    "reason_why_gpt": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ベドリズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "ミリキズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤名が明記されており、在宅自己注射指導管理料等の算定対象として院外処方が認められています。告示上に特段の条件は付されていません。",
+    "reason_why_gpt": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ミリキズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "乾燥濃縮人プロテインC製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤名が明記されており、在宅自己注射指導管理料等の算定対象として院外処方が認められています。告示上に特段の条件は付されていません。",
+    "reason_why_gpt": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "乾燥濃縮人プロテインC製剤",
+    "kokuji_condition": ""
+  },
+  "メコバラミン製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤名が明記されており、在宅自己注射指導管理料等の算定対象として院外処方が認められています。告示上に特段の条件は付されていません。",
+    "reason_why_gpt": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "メコバラミン製剤",
+    "kokuji_condition": ""
+  },
+  "ベンラリズマブ製剤": {
+    "consensus_verdict": "△",
+    "confidence": "medium",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "△",
+      "gpt": "△"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤名が明記されていますが、「四週間を超える間隔で投与する場合を除く」という条件が付されているため、処方間隔の確認が必要です。",
+    "reason_why_gpt": "告示に記載があるが、四週間を超える間隔で投与する場合は除外されるため、条件付きで可能。",
+    "method_gemini": "投与間隔が4週間以内である場合に限り院外処方可能です。処方箋には用法・用量として投与間隔が4週間以内であることがわかるように記載する必要があります。在宅自己注射指導管理料の算定対象となります。",
+    "method_gpt": "四週間以内の投与間隔であれば院外処方が可能。患者の状態に応じて適切な管理を行い、処方箋には投与間隔を明記する必要がある。",
+    "source_text": "ベンラリズマブ製剤(四週間を超える間隔で投与する場合を除く。)",
+    "kokuji_condition": "四週間を超える間隔で投与する場合を除く。"
+  },
+  "マルスタシマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤名が明記されており、在宅自己注射指導管理料等の算定対象として院外処方が認められています。告示上に特段の条件は付されていません。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "マルスタシマブ製剤",
+    "kokuji_condition": ""
+  },
+  "ロザノリキシズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤カテゴリ名が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められているため。告示上、特定の疾患や患者条件に関する限定はない。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "ロザノリキシズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "レブリキズマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤カテゴリ名が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められているため。告示上、特定の疾患や患者条件に関する限定はない。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "レブリキズマブ製剤",
+    "kokuji_condition": ""
+  },
+  "クロバリマブ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤カテゴリ名が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められているため。告示上、特定の疾患や患者条件に関する限定はない。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "クロバリマブ製剤",
+    "kokuji_condition": ""
+  },
+  "シパグルコシダーゼ　アルファ製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤カテゴリ名が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められているため。告示上、特定の疾患や患者条件に関する限定はない。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "シパグルコシダーゼ　アルファ製剤",
+    "kokuji_condition": ""
+  },
+  "パロペグテリパラチド製剤": {
+    "consensus_verdict": "○",
+    "confidence": "high",
+    "verdicts": {
+      "claude": "○",
+      "gemini": "○",
+      "gpt": "○"
+    },
+    "reason_why_gemini": "告示第十第一号に薬剤カテゴリ名が明記されており、在宅自己注射指導管理料の対象薬剤として院外処方が認められているため。告示上、特定の疾患や患者条件に関する限定はない。",
+    "reason_why_gpt": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "method_gemini": "",
+    "method_gpt": "",
+    "source_text": "パロペグテリパラチド製剤",
+    "kokuji_condition": ""
+  }
+}

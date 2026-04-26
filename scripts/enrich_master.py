@@ -1,20 +1,23 @@
-"""Gemini検証データをマスタCSVに統合し、品目ごとに理由・処方方法・告示原文を付与。
+"""Claude/Gemini/GPT 3者の判定 consensus をマスタCSVに統合。
 
 Input:
   data/master.csv                      Claude判定結果
-  data/gemini_verification.json        Gemini検証結果（カテゴリ別）
+  data/consensus.json                  Claude/Gemini/GPT 3者比較
+  (fallback: data/gemini_verification.json のみ)
 
 Output:
-  data/master_enriched.csv             全フィールド + 理由/方法/原文
+  data/master_enriched.csv             全フィールド + 理由/方法/原文 + 3AI意見
   app/data.json                        Web用圧縮JSON（拡張スキーマ）
 
 スキーマ変更:
   app/data.json の各品目に追加フィールド:
-    reason_why: なぜこの判定か（80-150字）
-    method: △の場合の処方方法（100-250字）、○/×はnull
-    source: 告示原文該当部分（30-200字）
-    verified: bool - Gemini検証済みか
-    agrees: bool - Claude判定とGemini判定が一致しているか
+    why_g: Gemini の理由
+    why_p: GPT の理由
+    how_g: Gemini の処方方法（△の場合）
+    how_p: GPT の処方方法
+    src: 告示原文該当部分
+    conf: confidence (high/medium/low/unknown)
+    cv: { c, g, p } 3者 verdict
 """
 from __future__ import annotations
 
@@ -27,6 +30,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MASTER = ROOT / "data/master.csv"
 VERIF = ROOT / "data/gemini_verification.json"
+CONSENSUS = ROOT / "data/consensus.json"
 OUT_ENRICHED = ROOT / "data/master_enriched.csv"
 OUT_APPJSON = ROOT / "app/data.json"
 OUT_META = ROOT / "app/meta.json"
@@ -41,6 +45,10 @@ def parse_categories_from_reason(reason: str) -> list[str]:
 
 
 def main() -> int:
+    # consensus.json があれば優先、なければ gemini単独 を後方互換で使う
+    consensus = {}
+    if CONSENSUS.exists():
+        consensus = json.loads(CONSENSUS.read_text(encoding="utf-8"))
     verif = {}
     if VERIF.exists():
         verif = json.loads(VERIF.read_text(encoding="utf-8"))
@@ -59,26 +67,42 @@ def main() -> int:
     enriched = []
     for r in rows:
         cats = parse_categories_from_reason(r["判定根拠"])
-        # Pick first category that has verification
-        reason_why = ""
-        method = ""
+        reason_why_g = reason_why_p = ""
+        method_g = method_p = ""
         source_text = ""
         verified = False
         agrees = None
         gemini_verdict = ""
+        gpt_verdict = ""
+        consensus_verdict = ""
+        confidence = ""
         used_category = ""
         for cat in cats:
+            cn = consensus.get(cat)
             v = verif.get(cat)
-            if v and v.get("verdict"):
-                reason_why = v.get("reason_why", "")
-                method = v.get("prescription_method") or ""
-                source_text = v.get("source_text", "")
-                gemini_verdict = v.get("verdict", "")
-                # agrees はこの品目の現在の判定と Gemini 判定の比較で再計算
-                # （verification.json 内の agrees は検証時点の値で古い可能性がある）
-                agrees = (gemini_verdict == r["院外処方可否"])
+            if cn and cn.get("consensus_verdict"):
+                reason_why_g = cn.get("reason_why_gemini", "") or (v.get("reason_why", "") if v else "")
+                reason_why_p = cn.get("reason_why_gpt", "")
+                method_g = cn.get("method_gemini", "") or (v.get("prescription_method") or "" if v else "")
+                method_p = cn.get("method_gpt", "")
+                source_text = cn.get("source_text", "") or (v.get("source_text", "") if v else "")
+                gemini_verdict = cn["verdicts"].get("gemini", "") or ""
+                gpt_verdict = cn["verdicts"].get("gpt", "") or ""
+                consensus_verdict = cn.get("consensus_verdict", "")
+                confidence = cn.get("confidence", "")
                 used_category = cat
                 verified = True
+                # この品目の現在の判定と consensus を比較
+                agrees = (consensus_verdict == r["院外処方可否"])
+                break
+            elif v and v.get("verdict"):
+                reason_why_g = v.get("reason_why", "")
+                method_g = v.get("prescription_method") or ""
+                source_text = v.get("source_text", "")
+                gemini_verdict = v.get("verdict", "")
+                used_category = cat
+                verified = True
+                agrees = (gemini_verdict == r["院外処方可否"])
                 break
 
         if verified:
@@ -89,10 +113,15 @@ def main() -> int:
 
         enriched.append({
             **r,
-            "理由解説": reason_why,
-            "処方方法": method,
+            "理由_Gemini": reason_why_g,
+            "理由_GPT": reason_why_p,
+            "処方方法_Gemini": method_g,
+            "処方方法_GPT": method_p,
             "告示原文": source_text,
             "Gemini判定": gemini_verdict,
+            "GPT判定": gpt_verdict,
+            "consensus判定": consensus_verdict,
+            "confidence": confidence,
             "検証済み": "yes" if verified else "no",
             "判定一致": "一致" if agrees is True else ("相違" if agrees is False else ""),
             "参照カテゴリ": used_category,
@@ -121,14 +150,18 @@ def main() -> int:
             "m": r["メーカー"],
             "h": r["先発後発"],
             "p": r["薬価"],
-            "g": r["院外処方可否"],  # ○/△/×/－
-            "r": r["判定根拠"],        # 短縮根拠（従来）
+            "g": r["院外処方可否"],  # ○/△/×/－（Claude判定 = master.csv上の最終）
+            "r": r["判定根拠"],
             "d": r["廃止経過措置"] or "",
             "x": r["廃止区分"] or "",
-            # NEW 拡張フィールド
-            "why": r["理由解説"] or "",
-            "how": r["処方方法"] or "",
+            # 3AI 検証
+            "why_g": r["理由_Gemini"] or "",
+            "why_p": r["理由_GPT"] or "",
+            "how_g": r["処方方法_Gemini"] or "",
+            "how_p": r["処方方法_GPT"] or "",
             "src": r["告示原文"] or "",
+            "cv": {"c": r["院外処方可否"], "g": r["Gemini判定"], "p": r["GPT判定"]},
+            "conf": r["confidence"] or "",
             "ver": r["検証済み"] == "yes",
         })
     OUT_APPJSON.parent.mkdir(parents=True, exist_ok=True)

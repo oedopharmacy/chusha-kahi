@@ -1,0 +1,240 @@
+{
+  "ソマプシタン（遺伝子組換え）": {
+    "gemini": {
+      "category": "ヒト成長ホルモン剤",
+      "confidence": "high"
+    }
+  },
+  "ソムアトロゴン（遺伝子組換え）": {
+    "gemini": {
+      "category": "ヒト成長ホルモン剤",
+      "confidence": "high"
+    }
+  },
+  "ホリトロピンアルファ（遺伝子組換え）": {
+    "gemini": {
+      "category": "性腺刺激ホルモン製剤",
+      "confidence": "high"
+    }
+  },
+  "フォリトロピン　ベータ（遺伝子組換え）": {
+    "gemini": {
+      "category": "性腺刺激ホルモン製剤",
+      "confidence": "high"
+    }
+  },
+  "アルプロスタジル": {
+    "gpt": {
+      "category": "プロスタグランジンI2製剤",
+      "confidence": "high"
+    }
+  },
+  "コリオゴナドトロピン　アルファ（遺伝子組換え）": {
+    "gemini": {
+      "category": "性腺刺激ホルモン製剤",
+      "confidence": "high"
+    },
+    "gpt": {
+      "category": "性腺刺激ホルモン製剤",
+      "confidence": "high"
+    }
+  },
+  "ホリトロピンデルタ（遺伝子組換え）": {
+    "gemini": {
+      "category": "性腺刺激ホルモン製剤",
+      "confidence": "high"
+    },
+    "gpt": {
+      "category": "性腺刺激ホルモン製剤",
+      "confidence": "high"
+    }
+  },
+  "ゴナドレリン酢酸塩": {
+    "gemini": {
+      "category": "性腺刺激ホルモン放出ホルモン剤",
+      "confidence": "high"
+    },
+    "gpt": {
+      "category": "ゴナドトロピン放出ホルモン誘導体",
+      "confidence": "high"
+    }
+  },
+  "ガニレリクス酢酸塩": {
+    "gemini": {
+      "category": "ゴナドトロピン放出ホルモン誘導体",
+      "confidence": "high"
+    }
+  },
+  "セトロレリクス酢酸塩": {
+    "gemini": {
+      "category": "ゴナドトロピン放出ホルモン誘導体",
+      "confidence": "high"
+    }
+  },
+  "ジノプロスト": {
+    "gpt": {
+      "category": "プロスタグランジンI2製剤",
+      "confidence": "high"
+    }
+  },
+  "グルコン酸カルシウム水和物": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high"
+    }
+  },
+  "塩化カルシウム水和物": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high"
+    }
+  },
+  "塩化カリウム": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high"
+    }
+  },
+  "Ｌ－アスパラギン酸カリウム": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high"
+    }
+  },
+  "アスパラギン酸カリウム・マグネシウム": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high"
+    }
+  },
+  "塩化ナトリウム": {
+    "gemini": {
+      "category": "電解質製剤",
+      "confidence": "high"
+    },
+    "gpt": {
+      "category": "生理食塩水",
+      "confidence": "high"
+    }
+  },
+  "トロンボモデュリンアルファ（遺伝子組換え）": {
+    "gemini": {
+      "category": "血液凝固阻止剤",
+      "confidence": "high"
+    }
+  },
+  "チサゲンレクルユーセル": {
+    "gemini": {
+      "category": "抗悪性腫瘍剤",
+      "confidence": "high"
+    }
+  },
+  "アキシカブタゲン　シロルユーセル": {
+    "gemini": {
+      "category": "抗悪性腫瘍剤",
+      "confidence": "high"
+    }
+  },
+  "リソカブタゲン　マラルユーセル": {
+    "gemini": {
+      "category": "抗悪性腫瘍剤",
+      "confidence": "high"
+    }
+  },
+  "テセルパツレブ": {
+    "gemini": {
+      "category": "抗悪性腫瘍剤",
+      "confidence": "high"
+    }
+  },
+  "イデカブタゲン　ビクルユーセル": {
+    "gemini": {
+      "category": "抗悪性腫瘍剤",
+      "confidence": "high"
+    }
+  },
+  "乾燥濃縮人血液凝固第Ⅸ因子  YJ4: 6343  例: 乾燥濃縮人血液凝固第Ⅸ因子": {
+    "gemini": {
+      "category": "乾燥人血液凝固第Ⅸ因子製剤",
+      "confidence": "high"
+    }
+  },
+  "乾燥濃縮人活性化プロテインＣ  YJ4: 6343  例: 注射用アナクトＣ２，５００単位": {
+    "gemini": {
+      "category": "乾燥濃縮人プロテインC製剤",
+      "confidence": "high"
+    }
+  },
+  "ｐＨ４処理酸性人免疫グロブリン（皮下注射）  YJ4: 6343  例: ハイゼントラ２０％皮下注１ｇ／５ｍＬ": {
+    "gemini": {
+      "category": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+      "confidence": "high"
+    }
+  },
+  "ロノクトコグ　アルファ（遺伝子組換え）  YJ4: 6343  例: エイフスチラ静注用５００": {
+    "gemini": {
+      "category": "遺伝子組換え型血液凝固第Ⅷ因子製剤",
+      "confidence": "high"
+    }
+  },
+  "エフアネソクトコグ　アルファ（遺伝子組換え）  YJ4: 6343  例: オルツビーオ静注用２５０": {
+    "gemini": {
+      "category": "遺伝子組換え型血液凝固第Ⅷ因子製剤",
+      "confidence": "high"
+    }
+  },
+  "スソクトコグ　アルファ（遺伝子組換え）  YJ4: 6343  例: オビザー静注用５００": {
+    "gemini": {
+      "category": "遺伝子組換え型血液凝固第Ⅷ因子製剤",
+      "confidence": "high"
+    }
+  },
+  "ｐＨ４処理酸性人免疫グロブリン（皮下注射）・ボルヒアルロニダーゼ　アルファ（遺伝子組換え）  YJ4: 6343  例: ハイキュービア１０％皮下注セット５ｇ／５０ｍＬ": {
+    "gemini": {
+      "category": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+      "confidence": "high"
+    }
+  },
+  "テセロイキン（遺伝子組換え）  YJ4: 6399  例: イムネース注３５": {
+    "gemini": {
+      "category": "抗悪性腫瘍剤",
+      "confidence": "high"
+    }
+  },
+  "乾燥濃縮人血液凝固第Ⅸ因子": {
+    "gpt": {
+      "category": "乾燥人血液凝固第Ⅸ因子製剤",
+      "confidence": "high"
+    }
+  },
+  "ｐＨ４処理酸性人免疫グロブリン（皮下注射）": {
+    "gpt": {
+      "category": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+      "confidence": "high"
+    }
+  },
+  "メトロニダゾール": {
+    "gemini": {
+      "category": "注射用抗菌薬",
+      "confidence": "high"
+    }
+  },
+  "スルファメトキサゾール・トリメトプリム": {
+    "gemini": {
+      "category": "注射用抗菌薬",
+      "confidence": "high"
+    }
+  },
+  "エフガルチギモド　アルファ（遺伝子組換え）": {
+    "gpt": {
+      "category": "エフガルチギモド　アルファ・ボルヒアルロニダーゼ　アルファ配合剤",
+      "confidence": "high"
+    }
+  },
+  "レミフェンタニル塩酸塩": {
+    "gpt": {
+      "category": "フェンタニルクエン酸塩製剤",
+      "confidence": "medium"
+    }
+  }
+}

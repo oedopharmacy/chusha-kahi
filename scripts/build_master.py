@@ -279,6 +279,13 @@ def main():
                 is_yj4 = m["rule"].startswith("yj4")
                 cat = cat_info.get(m["category"])
                 has_cond = bool(cat and cat.get("condition"))
+                # category_rules.yaml で match_level: specific 指定されているカテゴリは
+                # 告示の条件があっても「実質的に普遍的に満たされる」と解釈し ○ 扱い
+                rule_specific = (rules.get(m["category"]) or {}).get("match_level") == "specific"
+                if rule_specific and not is_yj4:
+                    # 具体マッチ + ルールで specific 指定 → 条件無視して ○ 扱い
+                    specific_no_cond.append(m)
+                    continue
                 if is_yj4:
                     yj4_only.append(m)
                 elif has_cond:
@@ -304,16 +311,34 @@ def main():
                 )
                 stats["△"] = stats.get("△", 0) + 1
             elif yj4_only:
-                # YJ薬効分類コードのみでマッチ → △（包括分類名記載のため個別確認必要）
-                gaika = "△"
+                # YJ薬効分類コードでマッチ
+                # category_rules.yaml の match_level: specific を見て ○/△ を判定
+                #   specific: 告示が無条件記載で薬効分類が均質 → ○
+                #   classification (default): 個別品目の臨床判断要 → △
                 cats_str = "/".join(m["category"] for m in yj4_only)
                 codes = ",".join(m["stem"] for m in yj4_only)
-                gaika_reason = (
-                    f"告示第十第一号 [{cats_str}] "
-                    f"に薬効分類名で包括記載（YJコード{codes}で該当）"
-                    f"※個別品目の臨床適合性・管理料要件を別途確認"
-                )
-                stats["△"] = stats.get("△", 0) + 1
+                # rules で specific 指定されているカテゴリを抽出
+                specific_yj4 = [
+                    m for m in yj4_only
+                    if (rules.get(m["category"]) or {}).get("match_level") == "specific"
+                ]
+                if specific_yj4 and len(specific_yj4) == len(yj4_only):
+                    # 全ての YJ4 マッチが specific → ○
+                    gaika = "○"
+                    gaika_reason = (
+                        f"告示第十第一号 [{cats_str}] に該当"
+                        f"（YJコード{codes}、無条件記載）"
+                    )
+                    stats["○"] += 1
+                else:
+                    # 1件でも classification があれば △
+                    gaika = "△"
+                    gaika_reason = (
+                        f"告示第十第一号 [{cats_str}] "
+                        f"に薬効分類名で包括記載（YJコード{codes}で該当）"
+                        f"※個別品目の臨床適合性・管理料要件を別途確認"
+                    )
+                    stats["△"] = stats.get("△", 0) + 1
             else:
                 gaika = "○"
                 cats_str = "/".join(m["category"] for m in matches)

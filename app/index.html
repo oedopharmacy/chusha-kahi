@@ -12,12 +12,14 @@
 <link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png">
 <meta name="theme-color" content="#595959">
 <style>
-  :root { --bg:#f8f9fb; --card:#fff; --border:#e2e5ec; --text:#222; --muted:#666; --ok:#22a06b; --ng:#c73757; --warn:#d17a00; --check:#b5880f; --del:#888; }
+  :root { --bg:#f8f9fb; --card:#fff; --border:#e2e5ec; --text:#222; --muted:#666; --ok:#22a06b; --ng:#c73757; --warn:#d17a00; --check:#b5880f; --del:#888; --header:#3a3a3a; }
   * { box-sizing: border-box; }
   body { font-family: -apple-system, "Hiragino Sans", "Yu Gothic", sans-serif; margin:0; background:var(--bg); color:var(--text); }
-  header { padding: 18px 20px 8px; background:var(--card); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:10; }
-  h1 { font-size: 18px; margin:0 0 6px; }
-  .meta { font-size: 11px; color: var(--muted); }
+  header { padding: 12px 16px 10px; background: var(--header); color:#fff; border-bottom:1px solid #2a2a2a; position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:12px; }
+  header .logo { width:46px; height:46px; flex-shrink:0; }
+  header .title-block { display:flex; flex-direction:column; min-width:0; }
+  header h1 { font-size: 18px; margin:0 0 4px; color:#fff; letter-spacing: 0.02em; }
+  .meta { font-size: 11px; color: #c8c8c8; }
   .search-wrap { padding: 12px 20px 14px; background:var(--card); border-bottom: 1px solid var(--border); position:sticky; top:52px; z-index:9; }
   #q { width:100%; padding:10px 12px; font-size:16px; border:1px solid var(--border); border-radius:8px; outline:none; }
   #q:focus { border-color:#4b7bec; }
@@ -41,32 +43,34 @@
   details.detail { margin-top:8px; border-top:1px dashed var(--border); padding-top:6px; font-size:12px; }
   details.detail > summary { cursor:pointer; color:#4b7bec; font-size:11px; user-select:none; }
   details.detail > summary:hover { text-decoration:underline; }
-  .why-box, .how-box, .src-box { margin-top:8px; padding:8px 10px; border-radius:6px; font-size:12px; line-height:1.55; }
+  .why-box, .how-box, .src-box, .cv-box { margin-top:8px; padding:8px 10px; border-radius:6px; font-size:12px; line-height:1.55; }
   .why-box { background:#eef5ff; border:1px solid #bed6f7; }
   .how-box { background:#fff4d1; border:1px solid #e8ce68; }
+  ul.bullets { margin:4px 0 0; padding-left:18px; }
+  ul.bullets li { margin:3px 0; line-height:1.55; }
   .src-box { background:#f5f5f5; border:1px solid var(--border); font-family:ui-monospace,monospace; font-size:11px; white-space:pre-wrap; }
+  .cv-box { background:#fafafa; border:1px solid var(--border); font-size:11px; }
+  .cv-row { display:flex; gap:8px; align-items:center; padding:2px 0; }
+  .cv-name { width:60px; font-weight:600; color:#555; font-size:10px; }
+  .cv-verdict { padding:1px 6px; border-radius:8px; font-weight:700; font-size:10px; }
+  .cv-verdict.v\_o { background:#e6f7ef; color:var(--ok); }
+  .cv-verdict.v\_t { background:#fff4d1; color:var(--check); }
+  .cv-verdict.v\_x { background:#fbe9ee; color:var(--ng); }
+  .cv-verdict.v\_d { background:#eee; color:#888; }
   .box-label { font-weight:600; font-size:10px; color:#666; margin-bottom:3px; text-transform:none; letter-spacing:0.03em; }
-  .verify-tag { font-size:10px; color:#2b7a50; margin-left:6px; }
   footer { border-top:1px solid var(--border); padding:14px 20px; background:var(--card); font-size:11px; color:var(--muted); }
-  .disclaimer { background:#fff6e5; border:1px solid #f5c983; border-radius:8px; padding:10px 12px; margin:10px 12px; font-size:12px; color:#6b4d00; }
   mark { background: #fff3a3; padding: 0 2px; }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>注射薬 院外処方可否 検索</h1>
-  <div class="meta" id="meta">loading…</div>
+  <img src="./logo-160.png" alt="大江戸代田薬局" class="logo">
+  <div class="title-block">
+    <h1>大江戸注射検索</h1>
+    <div class="meta" id="meta">loading…</div>
+  </div>
 </header>
-
-<div class="disclaimer">
-  <strong>⚠ 判定区分の意味</strong><br>
-  <b>○ 院外可</b>：告示第十第一号に具体的カテゴリ／成分名として記載あり・条件なし<br>
-  <b>△ 要確認</b>：告示に条件付き記載（例「在宅血液透析患者に限る」）、または告示に薬効分類名で包括記載されているもの（例「抗悪性腫瘍剤」「注射用抗菌薬」「電解質製剤」）。<strong>個別品目の条件適合性・臨床適合性・管理料要件を必ず告示原文で確認してください。</strong><br>
-  <b>× 院内のみ</b>：告示第十第一号に記載なし（院外処方箋での交付不可が原則）<br>
-  <b>－ 削除品目</b>：告示別表2に収載、保険使用不可<br>
-  本ツールは機械突合による参考情報です。最終判定は必ず告示原文・通知を直接ご確認ください。
-</div>
 
 <div class="search-wrap">
   <input id="q" type="search" autocomplete="off" autofocus placeholder="販売名・成分名・YJコードで検索（例: ヒューマリン／インスリン／ソマトロピン）">
@@ -103,9 +107,11 @@ async function load() {
   for (const r of DATA) {
     r._hay = normText(r.n + '\t' + r.s + '\t' + r.y + '\t' + r.m);
   }
-  document.getElementById('meta').textContent =
-    `収載${META.total}品目 ／ ○${META.stats['○']||0} △${META.stats['△']||0} ×${META.stats['×']||0} －${META.stats['－']||0}`
-    + (META.last_updated ? ` ／ 最終更新 ${META.last_updated}` : '');
+  const s = META.stats || {};
+  const line1 = `収載${META.total}品目（院外可${s['○']||0} 院外不可${s['×']||0} 要確認${s['△']||0}）`;
+  const line2 = META.last_updated ? `最終更新日 ${META.last_updated}` : '';
+  document.getElementById('meta').innerHTML =
+    escapeHtml(line1) + (line2 ? '<br>' + escapeHtml(line2) : '');
   render();
 }
 
@@ -175,6 +181,18 @@ function badge(g) {
   if (g === '×') return '<span class="badge ng">× 院内のみ</span>';
   return '<span class="badge del">－ 削除</span>';
 }
+function verdictClass(v) {
+  if (v === '○') return 'v_o';
+  if (v === '△') return 'v_t';
+  if (v === '×') return 'v_x';
+  return 'v_d';
+}
+function confLabel(c) {
+  if (c === 'high') return '一致(高)';
+  if (c === 'medium') return '多数派';
+  if (c === 'low') return '相違あり';
+  return '?';
+}
 
 function render() {
   const qn = normQuery(q.value);
@@ -195,13 +213,20 @@ function render() {
 
   const root = document.getElementById('results');
   root.innerHTML = shown.map(r => {
-    const hasDetail = r.why || r.how || r.src;
+    // 判定理由（複数AIの内容を箇条書きにまとめ）
+    const reasons = [];
+    if (r.why_g) reasons.push(r.why_g);
+    if (r.why_p && r.why_p !== r.why_g) reasons.push(r.why_p);
+    // 処方方法（条件付/△品目向け）
+    const methods = [];
+    if (r.how_g) methods.push(r.how_g);
+    if (r.how_p && r.how_p !== r.how_g) methods.push(r.how_p);
+    const hasDetail = reasons.length > 0 || methods.length > 0 || r.src;
     return `
     <div class="card">
       <div class="row-top">
         <span class="name">${escapeHtml(r.n)}</span>
         ${badge(r.g)}
-        ${r.ver ? '<span class="verify-tag" title="Gemini による告示解釈の検証済み">✓ Gemini検証済</span>' : ''}
       </div>
       <div class="row-sub">${escapeHtml(r.s)} ／ ${escapeHtml(r.m)} ／ YJ: ${escapeHtml(r.y)}</div>
       <div class="row-kikaku">規格: ${escapeHtml(r.k)}  /  薬価: ${escapeHtml(r.p)}</div>
@@ -209,9 +234,9 @@ function render() {
       <div class="reason">判定根拠: ${escapeHtml(r.r)}</div>
       ${hasDetail ? `
         <details class="detail">
-          <summary>詳細を表示（なぜこの判定か／処方方法／告示原文）</summary>
-          ${r.why ? `<div class="why-box"><div class="box-label">なぜこの判定か</div>${escapeHtml(r.why)}</div>` : ''}
-          ${r.how ? `<div class="how-box"><div class="box-label">条件付きで可能な処方方法</div>${escapeHtml(r.how)}</div>` : ''}
+          <summary>詳細を表示（判定理由／処方方法／告示原文）</summary>
+          ${reasons.length > 0 ? `<div class="why-box"><div class="box-label">判定理由</div><ul class="bullets">${reasons.map(t => `<li>${escapeHtml(t)}</li>`).join('')}</ul></div>` : ''}
+          ${methods.length > 0 ? `<div class="how-box"><div class="box-label">条件付きで可能な処方方法</div><ul class="bullets">${methods.map(t => `<li>${escapeHtml(t)}</li>`).join('')}</ul></div>` : ''}
           ${r.src ? `<div class="src-box"><div class="box-label">告示原文（該当部分）</div>${escapeHtml(r.src)}</div>` : ''}
         </details>
       ` : ''}

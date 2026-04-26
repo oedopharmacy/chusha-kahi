@@ -1,0 +1,954 @@
+{
+  "インスリン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "インスリン製剤",
+    "claude_verdict": "○"
+  },
+  "ヒト成長ホルモン剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ヒト成長ホルモン剤",
+    "claude_verdict": "○"
+  },
+  "遺伝子組換え活性型血液凝固第Ⅶ因子製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "遺伝子組換え活性型血液凝固第Ⅶ因子製剤",
+    "claude_verdict": "○"
+  },
+  "乾燥濃縮人血液凝固第Ⅹ因子加活性化第Ⅶ因子製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "乾燥濃縮人血液凝固第Ⅹ因子加活性化第Ⅶ因子製剤",
+    "claude_verdict": "○"
+  },
+  "乾燥人血液凝固第Ⅷ因子製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "乾燥人血液凝固第Ⅷ因子製剤",
+    "claude_verdict": "○"
+  },
+  "遺伝子組換え型血液凝固第Ⅷ因子製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "遺伝子組換え型血液凝固第Ⅷ因子製剤",
+    "claude_verdict": "○"
+  },
+  "乾燥人血液凝固第Ⅸ因子製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "乾燥人血液凝固第Ⅸ因子製剤",
+    "claude_verdict": "○"
+  },
+  "遺伝子組換え型血液凝固第Ⅸ因子製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "遺伝子組換え型血液凝固第Ⅸ因子製剤",
+    "claude_verdict": "○"
+  },
+  "活性化プロトロンビン複合体": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "活性化プロトロンビン複合体",
+    "claude_verdict": "○"
+  },
+  "乾燥人血液凝固因子抗体迂う回活性複合体": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "乾燥人血液凝固因子抗体迂う回活性複合体",
+    "claude_verdict": "○"
+  },
+  "性腺刺激ホルモン放出ホルモン剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "性腺刺激ホルモン放出ホルモン剤",
+    "claude_verdict": "○"
+  },
+  "性腺刺激ホルモン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "性腺刺激ホルモン製剤",
+    "claude_verdict": "○"
+  },
+  "ゴナドトロピン放出ホルモン誘導体": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ゴナドトロピン放出ホルモン誘導体",
+    "claude_verdict": "○"
+  },
+  "ソマトスタチンアナログ": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ソマトスタチンアナログ",
+    "claude_verdict": "○"
+  },
+  "顆か粒球コロニー形成刺激因子製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "顆か粒球コロニー形成刺激因子製剤",
+    "claude_verdict": "?"
+  },
+  "自己連続携行式腹膜灌かん流用灌かん流液": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "自己連続携行式腹膜灌かん流用灌かん流液",
+    "claude_verdict": "?"
+  },
+  "在宅中心静脈栄養法用輸液": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "在宅中心静脈栄養法用輸液",
+    "claude_verdict": "○"
+  },
+  "インターフェロンアルファ製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "インターフェロンアルファ製剤",
+    "claude_verdict": "○"
+  },
+  "インターフェロンベータ製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "インターフェロンベータ製剤",
+    "claude_verdict": "○"
+  },
+  "ブプレノルフィン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ブプレノルフィン製剤",
+    "claude_verdict": "○"
+  },
+  "抗悪性腫瘍剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "prescription_method": null,
+    "source_text": "抗悪性腫瘍剤",
+    "claude_verdict": "△"
+  },
+  "グルカゴン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "prescription_method": null,
+    "source_text": "グルカゴン製剤",
+    "claude_verdict": "○"
+  },
+  "グルカゴン様ペプチド―1受容体アゴニスト": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "prescription_method": null,
+    "source_text": "グルカゴン様ペプチド―1受容体アゴニスト",
+    "claude_verdict": "?"
+  },
+  "ヒトソマトメジンC製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "prescription_method": null,
+    "source_text": "ヒトソマトメジンC製剤",
+    "claude_verdict": "○"
+  },
+  "人工腎臓用透析液": {
+    "verdict": "△",
+    "reason_why": "在宅血液透析患者に対して使用する場合に限り、院外処方が可能とされている。",
+    "prescription_method": "在宅血液透析を行っている患者に限り、医師の指示に基づき処方可能。処方箋には患者が在宅血液透析を行っている旨を明記する必要がある。",
+    "source_text": "人工腎臓用透析液(在宅血液透析を行っている患者に対して使用する場合に限る。)",
+    "claude_verdict": "△"
+  },
+  "血液凝固阻止剤": {
+    "verdict": "△",
+    "reason_why": "在宅血液透析患者に対して使用する場合に限り、院外処方が可能とされている。",
+    "prescription_method": "在宅血液透析を行っている患者に限り、医師の指示に基づき処方可能。処方箋には患者が在宅血液透析を行っている旨を明記する必要がある。",
+    "source_text": "血液凝固阻止剤(在宅血液透析患者に対して使用する場合に限る。)",
+    "claude_verdict": "△"
+  },
+  "生理食塩水": {
+    "verdict": "△",
+    "reason_why": "在宅血液透析患者に対して使用する場合及び特定の注射薬の溶解又は希釈に用いる場合に限り、院外処方が可能とされている。",
+    "prescription_method": "在宅血液透析患者に対して使用する場合、または特定の注射薬の溶解・希釈に用いる場合に限り処方可能。処方箋には使用目的を明記する必要がある。",
+    "source_text": "生理食塩水(在宅血液透析患者に対して使用する場合及び本号に掲げる注射薬を投与するに当たりその溶解又は希釈に用いる場合に限る。)",
+    "claude_verdict": "△"
+  },
+  "プロスタグランジンI2製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "prescription_method": null,
+    "source_text": "プロスタグランジンI2製剤",
+    "claude_verdict": "?"
+  },
+  "モルヒネ塩酸塩製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "prescription_method": null,
+    "source_text": "モルヒネ塩酸塩製剤",
+    "claude_verdict": "○"
+  },
+  "エタネルセプト製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が可能と判断される。",
+    "prescription_method": null,
+    "source_text": "エタネルセプト製剤",
+    "claude_verdict": "○"
+  },
+  "注射用水": {
+    "verdict": "△",
+    "reason_why": "告示において、特定の注射薬を投与する際の溶解または希釈に用いる場合に限り使用可能とされているため。",
+    "prescription_method": "注射用水は、告示第十第一号に掲げる注射薬を投与する際に、その溶解または希釈に用いる場合に限り、訪問薬局経由での処方が可能。処方箋には使用目的を明記し、該当する注射薬と併せて処方する必要がある。",
+    "source_text": "注射用水(本号に掲げる注射薬を投与するに当たりその溶解又は希釈に用いる場合に限る。)",
+    "claude_verdict": "△"
+  },
+  "ペグビソマント製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "prescription_method": null,
+    "source_text": "ペグビソマント製剤",
+    "claude_verdict": "○"
+  },
+  "スマトリプタン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "prescription_method": null,
+    "source_text": "スマトリプタン製剤",
+    "claude_verdict": "○"
+  },
+  "フェンタニルクエン酸塩製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "prescription_method": null,
+    "source_text": "フェンタニルクエン酸塩製剤",
+    "claude_verdict": "○"
+  },
+  "複方オキシコドン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "prescription_method": null,
+    "source_text": "複方オキシコドン製剤",
+    "claude_verdict": "○"
+  },
+  "ベタメタゾンリン酸エステルナトリウム製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "prescription_method": null,
+    "source_text": "ベタメタゾンリン酸エステルナトリウム製剤",
+    "claude_verdict": "○"
+  },
+  "デキサメタゾンリン酸エステルナトリウム製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "prescription_method": null,
+    "source_text": "デキサメタゾンリン酸エステルナトリウム製剤",
+    "claude_verdict": "○"
+  },
+  "デキサメタゾンメタスルホ安息香酸エステルナトリウム製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "prescription_method": null,
+    "source_text": "デキサメタゾンメタスルホ安息香酸エステルナトリウム製剤",
+    "claude_verdict": "?"
+  },
+  "プロトンポンプ阻害剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "prescription_method": null,
+    "source_text": "プロトンポンプ阻害剤",
+    "claude_verdict": "○"
+  },
+  "H2遮断剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的な条件がなく、無条件で院外処方が可能とされているため。",
+    "prescription_method": null,
+    "source_text": "H2遮断剤",
+    "claude_verdict": "○"
+  },
+  "カルバゾクロムスルホン酸ナトリウム製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "カルバゾクロムスルホン酸ナトリウム製剤",
+    "claude_verdict": "○"
+  },
+  "トラネキサム酸製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "トラネキサム酸製剤",
+    "claude_verdict": "○"
+  },
+  "フルルビプロフェンアキセチル製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "フルルビプロフェンアキセチル製剤",
+    "claude_verdict": "○"
+  },
+  "メトクロプラミド製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "メトクロプラミド製剤",
+    "claude_verdict": "○"
+  },
+  "プロクロルペラジン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "プロクロルペラジン製剤",
+    "claude_verdict": "○"
+  },
+  "ブチルスコポラミン臭化物製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ブチルスコポラミン臭化物製剤",
+    "claude_verdict": "○"
+  },
+  "グリチルリチン酸モノアンモニウム・グリシン・L―システイン塩酸塩配合剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "グリチルリチン酸モノアンモニウム・グリシン・L―システイン塩酸塩配合剤",
+    "claude_verdict": "?"
+  },
+  "アダリムマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "アダリムマブ製剤",
+    "claude_verdict": "○"
+  },
+  "エリスロポエチン": {
+    "verdict": "△",
+    "reason_why": "在宅血液透析又は在宅腹膜灌流を行っている患者のうち腎性貧血状態にある場合に限り処方可能。",
+    "prescription_method": "在宅血液透析または在宅腹膜灌流を行っている患者で、腎性貧血状態にある場合に限り処方可能。処方箋には患者の状態と治療法を明記する必要がある。",
+    "source_text": "エリスロポエチン(在宅血液透析又は在宅腹膜灌流を行っている患者のうち腎性貧血状態にあるものに対して使用する場合に限る。)",
+    "claude_verdict": "?"
+  },
+  "ダルベポエチン": {
+    "verdict": "△",
+    "reason_why": "在宅血液透析又は在宅腹膜灌流を行っている患者のうち腎性貧血状態にある場合に限り処方可能。",
+    "prescription_method": "在宅血液透析または在宅腹膜灌流を行っている患者で、腎性貧血状態にある場合に限り処方可能。処方箋には患者の状態と治療法を明記する必要がある。",
+    "source_text": "ダルベポエチン(在宅血液透析又は在宅腹膜灌流を行っている患者のうち腎性貧血状態にあるものに対して使用する場合に限る。)",
+    "claude_verdict": "△"
+  },
+  "テリパラチド製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "テリパラチド製剤",
+    "claude_verdict": "○"
+  },
+  "アドレナリン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "アドレナリン製剤",
+    "claude_verdict": "○"
+  },
+  "ヘパリンカルシウム製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ヘパリンカルシウム製剤",
+    "claude_verdict": "○"
+  },
+  "オキシコドン塩酸塩製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "オキシコドン塩酸塩製剤",
+    "claude_verdict": "○"
+  },
+  "アポモルヒネ塩酸塩製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "アポモルヒネ塩酸塩製剤",
+    "claude_verdict": "○"
+  },
+  "セルトリズマブペゴル製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "セルトリズマブペゴル製剤",
+    "claude_verdict": "○"
+  },
+  "トシリズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "トシリズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "メトレレプチン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "メトレレプチン製剤",
+    "claude_verdict": "○"
+  },
+  "アバタセプト製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "アバタセプト製剤",
+    "claude_verdict": "○"
+  },
+  "pH4処理酸性人免疫グロブリン(皮下注射)製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "pH4処理酸性人免疫グロブリン(皮下注射)製剤",
+    "claude_verdict": "?"
+  },
+  "電解質製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "電解質製剤",
+    "claude_verdict": "△"
+  },
+  "注射用抗菌薬": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "注射用抗菌薬",
+    "claude_verdict": "△"
+  },
+  "エダラボン製剤": {
+    "verdict": "△",
+    "reason_why": "筋萎縮性側索硬化症患者に対して使用する場合に限ると条件が付されているため、条件付きで院外処方が可能。",
+    "prescription_method": "筋萎縮性側索硬化症患者に限定されるため、診断書や医師の指示書が必要。処方箋には患者の疾患名を明記し、適切な管理料を算定することが求められる。",
+    "source_text": "エダラボン製剤(筋萎縮性側索硬化症患者に対して使用する場合に限る。)",
+    "claude_verdict": "△"
+  },
+  "アスホターゼ　アルファ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "アスホターゼ　アルファ製剤",
+    "claude_verdict": "○"
+  },
+  "グラチラマー酢酸塩製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "グラチラマー酢酸塩製剤",
+    "claude_verdict": "○"
+  },
+  "脂肪乳剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "脂肪乳剤",
+    "claude_verdict": "○"
+  },
+  "セクキヌマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "セクキヌマブ製剤",
+    "claude_verdict": "○"
+  },
+  "エボロクマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "エボロクマブ製剤",
+    "claude_verdict": "○"
+  },
+  "ブロダルマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ブロダルマブ製剤",
+    "claude_verdict": "○"
+  },
+  "アリロクマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "アリロクマブ製剤",
+    "claude_verdict": "?"
+  },
+  "ベリムマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ベリムマブ製剤",
+    "claude_verdict": "○"
+  },
+  "イキセキズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "イキセキズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "ゴリムマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ゴリムマブ製剤",
+    "claude_verdict": "○"
+  },
+  "エミシズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "エミシズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "イカチバント製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "イカチバント製剤",
+    "claude_verdict": "○"
+  },
+  "サリルマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "サリルマブ製剤",
+    "claude_verdict": "○"
+  },
+  "デュピルマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "デュピルマブ製剤",
+    "claude_verdict": "○"
+  },
+  "ヒドロモルフォン塩酸塩製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ヒドロモルフォン塩酸塩製剤",
+    "claude_verdict": "○"
+  },
+  "インスリン・グルカゴン様ペプチド―1受容体アゴニスト配合剤": {
+    "verdict": "△",
+    "reason_why": "告示に具体的な記載がないが、関連する成分が含まれているため、条件付きで可能と判断。",
+    "prescription_method": "インスリン製剤およびグルカゴン様ペプチド-1受容体アゴニストが告示に記載されているため、これらの成分を含む配合剤も条件付きで処方可能と考えられる。具体的な処方条件は医師の判断に依存する。",
+    "source_text": "インスリン製剤、グルカゴン様ペプチド―1受容体アゴニスト",
+    "claude_verdict": "?"
+  },
+  "ヒドロコルチゾンコハク酸エステルナトリウム製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ヒドロコルチゾンコハク酸エステルナトリウム製剤",
+    "claude_verdict": "○"
+  },
+  "遺伝子組換えヒトvon Willebrand因子製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "遺伝子組換えヒトvon Willebrand因子製剤",
+    "claude_verdict": "?"
+  },
+  "ブロスマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ブロスマブ製剤",
+    "claude_verdict": "○"
+  },
+  "アガルシダーゼ　アルファ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "アガルシダーゼ　アルファ製剤",
+    "claude_verdict": "○"
+  },
+  "アガルシダーゼ　ベータ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "アガルシダーゼ　ベータ製剤",
+    "claude_verdict": "○"
+  },
+  "アルグルコシダーゼ　アルファ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "アルグルコシダーゼ　アルファ製剤",
+    "claude_verdict": "○"
+  },
+  "イデュルスルファーゼ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "イデュルスルファーゼ製剤",
+    "claude_verdict": "○"
+  },
+  "イミグルセラーゼ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "イミグルセラーゼ製剤",
+    "claude_verdict": "○"
+  },
+  "エロスルファーゼ　アルファ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "エロスルファーゼ　アルファ製剤",
+    "claude_verdict": "○"
+  },
+  "ガルスルファーゼ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ガルスルファーゼ製剤",
+    "claude_verdict": "○"
+  },
+  "セベリパーゼ　アルファ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件も付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "セベリパーゼ　アルファ製剤",
+    "claude_verdict": "○"
+  },
+  "ベラグルセラーゼ　アルファ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ベラグルセラーゼ　アルファ製剤",
+    "claude_verdict": "○"
+  },
+  "ラロニダーゼ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ラロニダーゼ製剤",
+    "claude_verdict": "○"
+  },
+  "メポリズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "メポリズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "オマリズマブ製剤": {
+    "verdict": "△",
+    "reason_why": "告示に記載があるが、季節性アレルギー性鼻炎の治療目的では使用不可の条件があるため、条件付きで可能。",
+    "prescription_method": "季節性アレルギー性鼻炎以外の治療目的で使用する場合に限り、院外処方が可能。処方箋には使用目的を明記する必要がある。",
+    "source_text": "オマリズマブ製剤(季節性アレルギー性鼻炎の治療のために使用する場合を除く。)",
+    "claude_verdict": "△"
+  },
+  "テデュグルチド製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "テデュグルチド製剤",
+    "claude_verdict": "○"
+  },
+  "サトラリズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "サトラリズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "ビルトラルセン製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ビルトラルセン製剤",
+    "claude_verdict": "○"
+  },
+  "レムデシビル製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "レムデシビル製剤",
+    "claude_verdict": "○"
+  },
+  "ガルカネズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ガルカネズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "オファツムマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "オファツムマブ製剤",
+    "claude_verdict": "○"
+  },
+  "ボソリチド製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ボソリチド製剤",
+    "claude_verdict": "○"
+  },
+  "エレヌマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "エレヌマブ製剤",
+    "claude_verdict": "○"
+  },
+  "アバロパラチド酢酸塩製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "アバロパラチド酢酸塩製剤",
+    "claude_verdict": "○"
+  },
+  "カプラシズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "カプラシズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "乾燥濃縮人C1―インアクチベーター製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "乾燥濃縮人C1―インアクチベーター製剤",
+    "claude_verdict": "?"
+  },
+  "フレマネズマブ製剤": {
+    "verdict": "△",
+    "reason_why": "告示に条件付きで記載されており、四週間に一回投与する場合に限り院外処方が可能。",
+    "prescription_method": "四週間に一回の投与が条件。処方箋には投与間隔を明記し、患者の状態に応じた管理が必要。訪問薬局は投与スケジュールを確認し、適切な管理を行う。",
+    "source_text": "フレマネズマブ製剤(四週間に一回投与する場合に限る。)",
+    "claude_verdict": "△"
+  },
+  "メトトレキサート製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "メトトレキサート製剤",
+    "claude_verdict": "○"
+  },
+  "チルゼパチド製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "チルゼパチド製剤",
+    "claude_verdict": "○"
+  },
+  "ビメキズマブ製剤": {
+    "verdict": "△",
+    "reason_why": "告示に条件付きで記載されており、四週間を超えない間隔で投与する場合に限り院外処方が可能。",
+    "prescription_method": "四週間を超えない投与間隔が条件。処方箋には投与間隔を明記し、患者の状態に応じた管理が必要。訪問薬局は投与スケジュールを確認し、適切な管理を行う。",
+    "source_text": "ビメキズマブ製剤(四週間を超える間隔で投与する場合を除く。)",
+    "claude_verdict": "△"
+  },
+  "ホスレボドパ・ホスカルビドパ水和物配合剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ホスレボドパ・ホスカルビドパ水和物配合剤",
+    "claude_verdict": "○"
+  },
+  "ペグバリアーゼ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ペグバリアーゼ製剤",
+    "claude_verdict": "○"
+  },
+  "パビナフスプ　アルファ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "パビナフスプ　アルファ製剤",
+    "claude_verdict": "○"
+  },
+  "アバルグルコシダーゼ　アルファ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "アバルグルコシダーゼ　アルファ製剤",
+    "claude_verdict": "○"
+  },
+  "ラナデルマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ラナデルマブ製剤",
+    "claude_verdict": "○"
+  },
+  "ネモリズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ネモリズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "ペグセタコプラン製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ペグセタコプラン製剤",
+    "claude_verdict": "○"
+  },
+  "ジルコプランナトリウム製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ジルコプランナトリウム製剤",
+    "claude_verdict": "○"
+  },
+  "コンシズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "コンシズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "テゼペルマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "テゼペルマブ製剤",
+    "claude_verdict": "○"
+  },
+  "オゾラリズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "オゾラリズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "トラロキヌマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "トラロキヌマブ製剤",
+    "claude_verdict": "○"
+  },
+  "エフガルチギモド　アルファ・ボルヒアルロニダーゼ　アルファ配合剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "エフガルチギモド　アルファ・ボルヒアルロニダーゼ　アルファ配合剤",
+    "claude_verdict": "?"
+  },
+  "ドブタミン塩酸塩製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ドブタミン塩酸塩製剤",
+    "claude_verdict": "○"
+  },
+  "ドパミン塩酸塩製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ドパミン塩酸塩製剤",
+    "claude_verdict": "○"
+  },
+  "ノルアドレナリン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ノルアドレナリン製剤",
+    "claude_verdict": "○"
+  },
+  "ベドリズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ベドリズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "ミリキズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "ミリキズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "乾燥濃縮人プロテインC製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "乾燥濃縮人プロテインC製剤",
+    "claude_verdict": "?"
+  },
+  "メコバラミン製剤": {
+    "verdict": "○",
+    "reason_why": "告示に具体的に記載されており、特に条件が付されていないため、院外処方が無条件で可能。",
+    "prescription_method": null,
+    "source_text": "メコバラミン製剤",
+    "claude_verdict": "○"
+  },
+  "ベンラリズマブ製剤": {
+    "verdict": "△",
+    "reason_why": "告示に記載があるが、四週間を超える間隔で投与する場合は除外されるため、条件付きで可能。",
+    "prescription_method": "四週間以内の投与間隔であれば院外処方が可能。患者の状態に応じて適切な管理を行い、処方箋には投与間隔を明記する必要がある。",
+    "source_text": "ベンラリズマブ製剤(四週間を超える間隔で投与する場合を除く。)",
+    "claude_verdict": "△"
+  },
+  "マルスタシマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "マルスタシマブ製剤",
+    "claude_verdict": "○"
+  },
+  "ロザノリキシズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "ロザノリキシズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "レブリキズマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "レブリキズマブ製剤",
+    "claude_verdict": "○"
+  },
+  "クロバリマブ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "クロバリマブ製剤",
+    "claude_verdict": "○"
+  },
+  "シパグルコシダーゼ　アルファ製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "シパグルコシダーゼ　アルファ製剤",
+    "claude_verdict": "○"
+  },
+  "パロペグテリパラチド製剤": {
+    "verdict": "○",
+    "reason_why": "告示第十第一号に具体的に記載されており、条件が付されていないため、無条件で院外処方が可能。",
+    "prescription_method": null,
+    "source_text": "パロペグテリパラチド製剤",
+    "claude_verdict": "○"
+  }
+}
